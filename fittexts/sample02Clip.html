@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/bootstrap.min.css" >
+    <script src="../dist/jquery-3.5.0.min.js" ></script>
+    <style>
+        body { font-size: 14px; }
+        img { width: 100%; margin: 20px auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h1>This is a sample page.</h1>
+            </div>
+            <div class="col-6"><div class="clip01"></div></div>
+            <div class="col-6"><div class="clip02"></div>            
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed felis diam, euismod in mattis eget, consectetur ac urna. Cras sit amet porttitor nisl, vitae tincidunt magna. Curabitur quis viverra risus. Aliquam id tellus sem. Sed sed urna nec arcu dignissim tempor id vitae eros. Nullam metus libero, posuere vel aliquam ut, consectetur ac magna. Donec in mi rhoncus, efficitur risus quis, posuere tellus. Nam at mattis elit. Nam lobortis nisi non egestas viverra.
+            </div>
+            <div class="col-6"><div class="clip03"></div></div>
+            <div class="col-6"><div class="clip04"></div></div>
+            <div class="col-6"><div class="clip05"></div></div>
+            <div class="col-6"><div class="clip06"></div></div>
+            <div class="col-6"><div class="clip07"></div></div>
+            <div class="col-6"><div class="clip08"></div></div>
+            <div class="col-6"><div class="clip09"></div></div>
+            <div class="col-6"><div class="clip10"></div></div>
+            <div class="col-12 d-flex flex-wrap">
+                <div class="shape box01"></div>
+                <div class="shape box02"></div>
+                <div class="shape box03"></div>
+                <div class="shape box04"></div>
+                <div class="shape box05"></div>
+                <div class="shape box06"></div>
+                <div class="shape box07"></div>
+                <div class="shape box08"></div>
+                <div class="shape box09"></div>
+                <div class="shape box10"></div>
+                <div class="shape box11"></div>
+                <div class="shape box12"></div>
+            </div>
+            <div class="col-12 d-flex flex-wrap">
+                <div class="shape2 box13"></div>
+                <div class="shape2 box14"></div>
+                <div class="shape2 box15"></div>
+                <div class="shape2 box16"></div>
+            </div>
+            <div class="col-12">
+                <img src="../imgs/img_14.jpg" class="croper">
+            </div>
+            <div class="col-12"><br><br>
+                <pre>
+clip-path: rectangle(x, y, width, height, rounded-x, rounded-y)
+          
+  clip-path: inset-rectangle(from top, from right, from bottom, from left, rounded-x, rounded-y)
+  /* Looks like this is what rect() used to be like with clip */
+  /* Will replace inset(), I suppose */
+
+  clip-path: polygon(a, bunch, of, points)
+  clip-path: circle(radius at x, y)
+  clip-path: ellipse(radius-x, radius-y at x, y)
+                </pre><br><br>
+            </div>
+        </div>
+    </div>
+<style type="text/css">
+    .shape { background: url(../imgs/img_14.jpg); background-attachment: fixed; background-size: cover; min-width: 30vw; height: 30vw; display: inline-block; margin: 1vw; }
+    .shape2 { background: url(../imgs/img_14.jpg); background-size: calc(100vw - 40px); min-width: 22vw; height: 22vw; display: inline-block; margin: 1vw; clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+    .box01 { clip-path: circle(50%); }
+    .box02 { clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+    .box03 { clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%); }
+    .box04 { clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%); }
+    .box05 { clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); }
+    .box06 { clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%); }
+    .box07 { clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); }
+    .box08 { clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+    .box09 { clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%); }
+    .box10 { clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%); }
+    .box11 { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+    .box12 { clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); }
+
+    .box13 { background-position: 96vw 50%; }
+    .box14 { background-position: 72vw 50%; }
+    .box15 { background-position: 48vw 50%; }
+    .box16 { background-position: 24vw 50%; }
+    .croper { clip-path: polygon(0% 30%, 100% 30%, 100% 70%, 0% 70%); margin-top: -20%; margin-bottom: -20%; }
+
+    .clip01, .clip02, .clip03, .clip04, .clip05, .clip06, .clip07, .clip08, .clip09, .clip10 { background-repeat: no-repeat !important; background-size: cover !important; background-position: 100% 10% !important; height: 330px; width: 80%; margin: 20px auto; }
+    .clip01 { background: url("../imgs/img_9.jpg"); clip-path: circle(22vw at center); }
+    .clip02 { background: url(../imgs/img_6.jpg); background-size: cover; height: 300px; width: 300px; shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); float: left; border: 10px solid rgb(255, 0, 0); outline: 10px solid blue; outline-offset: -26px; }
+    .clip03 { background: url("../imgs/img_8.jpg"); clip-path: circle(20vw at 22vw 40vh); }
+    .clip04 { background: url("../imgs/frog.jpg"); clip-path: circle(10vw at 22vw 34vh); }
+    .clip05 { background: url("../imgs/test5.jpg"); clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+    .clip06 { background: url("../imgs/frog.jpg"); clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%); }
+    .clip07 { background: url("../imgs/img_9.jpg"); clip-path: polygon(5% 4%, 100% 2%, 95% 75%, 83% 75%, 75% 100%, 50% 75%, 0% 75%); }
+    .clip08 { background: url("../imgs/img_6.jpg"); clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%); }
+    .clip09 { background: url("../imgs/img_9.jpg"); clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); }
+    .clip10 { background: url("../imgs/img_6.jpg"); clip-path: rectangle(10px, 10px, 50%, 50%, rounded-x, rounded-y); }
+    #my-scrollbar {
+      width: 100vw;
+      height: 100vh;
+      overflow: auto;
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,117 @@
+.obj01, .obj02, .obj02:before, .obj02:after, .obj03, .obj04, .obj05, .obj06, .obj07, .obj08, .obj10, .obj12, .obj13, .obj14, .obj15, .obj16 {
+	background: orange; width: 50px; height: 50px;  margin: 20px auto 0; border-radius: 2px;
+}
+
+.obj01 { animation: spinside 1s linear infinite; }
+
+.obj02, .obj03, .obj04, .obj06 { width: 0; height: 0; }
+.obj02:before, .obj02:after { content: " "; position: absolute; background: #0000007a; border-radius: 40px; animation: bounce 2s infinite linear; left: calc(50% - 25px); top: calc(50% - 40px); }
+.obj02:after { animation-delay: -1s; }
+
+.obj03:before, .obj03:after { content: " "; width: 10px; height: 10px; position: absolute; background: orange; animation: runMove 2s infinite ease-in-out; }
+.obj04:before, .obj04:after { content: " "; width: 10px; height: 10px; position: absolute; background: orange; animation: runMove 2s infinite ease-in-out; }
+.obj06:before, .obj06:after { content: ' '; left: calc(50% - 10px); top: calc(50%); background: orange; position: absolute; width: 20px; height: 20px; border-radius: 6px; animation: runSide 2s infinite ease-in-out; }
+.obj06:before { transform-origin: center top; }
+.obj06:after { transform-origin: center bottom; animation-delay: -0.75s; }
+.obj06:after { animation-direction: reverse; }
+.obj03:after { animation-delay: -0.75s; }
+.obj04:after { animation-delay: -1s; }
+
+.obj05 { border-radius: 40px; background: rgba(6, 6, 6, 0.25); animation: drop 1s infinite linear; }
+.obj05:after { content: ' '; position: absolute; width: 50px; height: 50px; background: #ffffff33; border: 2px solid rgba(255, 255, 255, 0.5); animation-delay: -0.5s; border-radius: 40px; animation: drop 1s infinite linear; }
+.obj07 { width: 0; height: 0; }
+.obj07:before, .obj07:after { content: ' '; margin-top: 20px; width: 40px; height: 40px; background: #7dd5f9a2; position: absolute; margin-left: -10px; animation: resize 2s infinite; border-radius: 5px; }
+.obj07:before { margin-left: -32px; animation-delay: -1s; }
+.obj08 { background: #00000022; }
+.obj08:before { content: " "; position: absolute; background: purple; width: 20px; height: 20px; transform-origin: bottom right;
+    animation: rotatef 1s infinite linear;
+}
+
+.obj09 { margin: 20px auto; width: 30px; height: 30px; outline: 1px solid #999; outline-offset: -3px; background: transparent; border: 1px solid #888; animation: 3s rotate infinite ease-in-out; }
+.obj09:before, .obj09:after { content: " "; position: absolute; width: 10px; height: 10px; border: 2px solid #777; outline: 1px solid; outline-offset: 3px; animation: 3s rotateo infinite linear; }
+.obj09::before { left: -15px; top: -15px; }
+.obj09::after { left: 33px; top: 32px; }
+
+@keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@keyframes rotateo { 0% { transform: rotate(0deg); } 100% { transform: rotate(-360deg); } }
+
+@keyframes resize { 0%, 100% { transform: scale(0); } 50% { transform: scale(1); } }
+@keyframes resizepos { 0%, 100% { width: 0; height: 0; margin-left: calc(25% - 60px); margin-top: 50px; } 50% { margin-top: 25px; margin-left: calc(25% - 85px); width: 50px; height: 50px; } }
+@keyframes rotate {
+	0%, 100% { transform: rotateZ(0deg); }
+	50% { transform: rotateZ(360deg); }
+}
+@keyframes rotatef {
+	0%, 40% { transform: rotateZ(0deg); }
+	60%, 100% { transform: rotateZ(90deg); }
+	40%, 60% { opacity: 1; margin-left: 0px; }
+	0%, 20%, 80%, 100% { opacity: 0; margin-left: 10px; }
+}
+@keyframes spinside {
+  0%  { transform: perspective(100px) }
+  50% { transform: perspective(100px) rotateY(180deg) }
+  100%{ transform: perspective(100px) rotateY(180deg) rotateX(180deg) }
+}
+@keyframes bounce {
+	0%, 100% { transform: scale(0.0); }
+	50% { transform: scale(1); }
+}
+@keyframes drop {
+	0% { transform: scale(0.0); }
+	50% { transform: scale(1); opacity: 1; }
+	100% { transform: scale(2); opacity: 0; }
+}
+@keyframes runMove {
+	0%, 100% {  left: calc(50% + 15px); top: calc(50% + 25px); transform: scale(0.5); opacity: 0.5; }
+	12.5% { transform: scale(2.5);  opacity: 0.75; }
+	25% {  left: calc(50% - 25px); top: calc(50% + 25px); transform: scale(0.5); opacity: 0.5; }
+	37.5% { transform: scale(2.5);  opacity: 0.75; }
+	50% {  left: calc(50% - 25px); top: calc(50% - 15px); transform: scale(0.5); opacity: 0.5; }
+	62.5% { transform: scale(2.5);  opacity: 0.75; }
+	75% {  left: calc(50% + 15px); top: calc(50% - 15px); transform: scale(0.5); opacity: 0.5; }	
+	87.5% { transform: scale(2.5);  opacity: 0.75; }
+}
+@keyframes runSide {
+	0%, 100% { left: calc(50% + 20px); transform: scale(0.5) rotate(0deg); }
+	25%, 75% { transform: scale(1.5) rotate(90deg); opacity: 0.5 }
+	50% { left: calc(50% - 45px); transform: scale(0.5) rotate(180deg); }
+}
+
+.obj10 { width: 40px; height: 40px; animation: 4s proanim infinite; background-color: green; border-radius: 20px; box-shadow: inset 5px -5px 20px #00000095; }
+.obj10::before { content: " "; position: absolute; width: 10px; left: 13px; top: 41px; box-shadow: 0 0 10px 3px black; animation: 4s shadanim infinite; }
+@keyframes proanim {
+  from, 20%, 53%, 80%, to { animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); transform: translate3d(0, 0, 0) scale(1, 1); background: green; }
+  40%, 43% { animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06); transform: translate3d(0, -30px, 0); background: green; }
+  53% { animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06); background: #58f10a;   }
+  70% { animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06); transform: translate3d(0, -15px, 0); background: green; }
+  80% { animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06); transform: scale(1.1, .95); background: #3faf07; }
+  90% { transform: translate3d(0, -4px, 0); }
+}
+@keyframes shadanim {
+  from, 20%, 53%, 80%, to {animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); transform: translate3d(0, 0, 0) scale(1.9, 0.6); }
+  40%, 43% { animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06); transform: translate3d(0, 30px, 0) scale(0.49, 0.48); }
+  70% { animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06); transform: translate3d(0, 15px, 0) scale(0.79, 0.68); }
+  90% { transform: translate3d(0, 4px, 0) scale(0.8, 0.7); }
+}
+
+.boxholder { width: 150px; margin: 80px auto; height: 150px; }
+.origin { animation: spin 6s cubic-bezier(.8, 0, .2, 1) infinite; width: 50px; height: 50px; background: skyblue; position: relative; float: left; }
+  @keyframes spin {
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.obj11 { width: 50px; margin: 0 auto; }
+.obj11:before { content: " "; position: absolute; margin: 20px auto 0; width: 40px; height: 40px; animation: 4s proanimf infinite ease-in-out; background-color: green; border-radius: 20px; box-shadow: inset 5px -5px 20px #00000095; }
+.obj11:after { content: " "; position: absolute;left: 47.5%; top: 61px; width: 20px; box-shadow: 0 0 10px 3px black; animation: 4s shadanimf infinite ease-in-out; }
+
+@keyframes proanimf {
+  0% { transform: translate3d(0, 0, 0);  background: green; }
+  50% { transform: translate3d(0, -30px, 0); }
+  100% { transform: translate3d(0, 0, 0); background: green; }
+}
+@keyframes shadanimf {
+  0% { transform: scale(1, 0.25); }
+  70% { transform: scale(0.3, 0.25); }
+  100% { transform: scale(1, 0.25); }
+}

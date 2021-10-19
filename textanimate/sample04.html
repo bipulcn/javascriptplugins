@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/bootstrap.min.css" >
+    <script src="../dist/jquery-3.5.0.min.js" ></script>
+    <script type="text/javascript" src="./js/anime.min.js"></script>
+    <script type="text/javascript" src="./js/simanime.js"></script>      
+    <link rel="stylesheet" type="text/css" href="./css/simanime.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h1>This is a sample page.</h1>
+            </div>
+            <div class="col-6">
+                <div class="animate" data-ani='r|i|360|1.5|sn|0.1+i|o|1|1.5|sn|0.1'></div>
+                <div class="animate" data-ani='tx|o|360|2.5|sn|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='ty|i|160|2.5|sn|0.1'></div>
+                <div class="animate" data-ani='s|i|2|1.5|sn|0.1+r|i|270|1.5|sn|0.1'></div>
+            </div>
+            <div class="col-6">
+                <div class="animate" data-ani='r|i|180|1.5|sn|0.1+sx|i|0.2|1|sn|1.5'></div>
+                <div class="animate" data-ani='r|i|-360|2.5|sn|0.1+bg|i|#4588AA|2.0|bqt|2.5'></div>
+                <div class="animate" data-ani='r|i|360|2.5|sn|0.1+wy|i|25|2|iqt|2.5'></div>
+                <div class="animate" data-ani='r|i|360|1.5|sn|0.1'></div>
+            </div>
+            <div class="col-6">
+                <div class="test"></div>
+            </div>
+            <div class="col-6">
+                <div class="keyframe" data-loop="true" data-ani='tx:100|1.0|sn|0+180|2.0|sn|1.0+0|1|bqt|0;bg:#097423|3|sn|0+#ffa500|3|sn|0'></div>
+                <div class="keyframe" data-loop="true" data-ani='tx:50|1.0|sn|0+180|2.0|sn|1.0+0|1|bqt|0'></div>
+                <div class="keyframe" data-loop="true" data-ani='tx:100|1.0|sn|0+0|2.0|sn|4.0;ty:100|1.0|iqt|1.5+0|1|bqt|5.5'></div>
+            </div>
+            <div class="clear"></div>
+            <div class="col-12"><hr style="margin-bottom: 100px; border:none;"></div>
+            <div class="col-12"><hr style="margin-bottom: 100px; border:none;"></div>
+            <div class="col-3">
+                <div class="animate" data-ani='tx|i|160|1.5|li|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='tx|o|160|2.5|li|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='ty|i|-100|2.5|li|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='ty|o|-102|1.5|sn|0.1' data-loop="true"></div>
+            </div>
+            <div class="col-3">
+                <div class="animate" data-ani='r|i|360|1.5|li|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='rx|i|360|1.5|li|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='ry|i|360|1.5|li|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='rz|i|360|1.5|li|0.1' data-loop="true"></div>
+            </div>
+            <div class="col-3">
+                <div class="animate" data-ani='s|o|1.5|1.5|li|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='sx|i|0|1.5|li|0.1' data-loop="true" style="margin-left: 50px"></div>
+                <div class="animate" data-ani='sy|i|0|1.5|li|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='sz|i|2|1.5|li|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='bg|i|#00AA55|1.5|li|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='cl|i|#FF0055|1.5|li|0.1' data-loop="true">C</div>
+            </div>
+            <div class="col-3">
+                <div class="animate" data-ani='w|i|30|1.5|li|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='wx|i|30|1.5|li|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='wy|i|30|1.5|li|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='wz|i|30|1.5|li|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='wd|i|50|1.5|li|0.1' data-loop="true"></div>
+                <div class="animate" data-ani='hi|i|50|1.5|li|0.1' data-loop="true"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="col-12"><hr style="margin-bottom: 100px; border:none;"></div>
+            <div class="col-12"><hr style="margin-bottom: 100px; border:none;"></div>
+            <div class="col-4">
+                <div class="animate" data-ani='tx|o|260|3|li|1' data-loop="true">li</div>
+                <div class="animate" data-ani='tx|o|260|3|qd|1' data-loop="true">qd</div>
+                <div class="animate" data-ani='tx|o|260|3|iqd|1' data-loop="true">iqd</div>
+                <div class="animate" data-ani='tx|o|260|3|bqd|1' data-loop="true">bqd</div>
+                <div class="animate" data-ani='tx|o|260|3|cu|1' data-loop="true">cu</div>
+                <div class="animate" data-ani='tx|o|260|3|icu|1' data-loop="true">icu</div>
+                <div class="animate" data-ani='tx|o|260|3|bcu|1' data-loop="true">bcu</div>
+                <div class="animate" data-ani='tx|o|260|3|qr|1' data-loop="true">qr</div>
+                <div class="animate" data-ani='tx|o|260|3|iqr|1' data-loop="true">iqr</div>
+                <div class="animate" data-ani='tx|o|260|3|bqr|1' data-loop="true">bqr</div>
+                <div class="animate" data-ani='tx|o|260|3|qt|1' data-loop="true">qt</div>
+                <div class="animate" data-ani='tx|o|260|3|iqt|1' data-loop="true">iqt</div>
+                <div class="animate" data-ani='tx|o|260|3|bqt|1' data-loop="true">bqt</div>
+            </div>
+            <div class="col-4">
+                <div class="animate" data-ani='tx|o|260|3|sn|1' data-loop="true">sn</div>
+                <div class="animate" data-ani='tx|o|260|3|isn|1' data-loop="true">isn</div>
+                <div class="animate" data-ani='tx|o|260|3|bsn|1' data-loop="true">bsn</div>
+                <div class="animate" data-ani='tx|o|260|3|ex|1' data-loop="true">ex</div>
+                <div class="animate" data-ani='tx|o|260|3|iex|1' data-loop="true">iex</div>
+                <div class="animate" data-ani='tx|o|260|3|bex|1' data-loop="true">bex</div>
+                <div class="animate" data-ani='tx|o|260|3|cr|1' data-loop="true">cr</div>
+                <div class="animate" data-ani='tx|o|260|3|icr|1' data-loop="true">icr</div>
+                <div class="animate" data-ani='tx|o|260|3|bcr|1' data-loop="true">bcr</div>
+            </div>
+            <div class="col-4">
+                <div class="animate" data-ani='tx|o|260|3|bc|3' data-loop="true">bc</div>
+                <div class="animate" data-ani='tx|o|260|3|ibc|3' data-loop="true">ibc</div>
+                <div class="animate" data-ani='tx|o|260|3|bbc|3' data-loop="true">bbc</div>
+                <div class="animate" data-ani='tx|o|260|3|bn|3' data-loop="true">bn</div>
+                <div class="animate" data-ani='tx|o|260|3|ibn|3' data-loop="true">ibn</div>
+                <div class="animate" data-ani='tx|o|260|3|bbn|3' data-loop="true">bbn</div>
+                <div class="animate" data-ani='tx|o|260|3|el|3' data-loop="true">el</div>
+                <div class="animate" data-ani='tx|o|260|3|iel|3' data-loop="true">iel</div>
+                <div class="animate" data-ani='tx|o|260|3|bel|3' data-loop="true">bel</div>
+            </div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-7"><img src="../imgs/dahlia.jpg" alt=""></div>
+            <div class="col-5"><img src="../imgs/img_6.jpg" alt=""></div>
+            <div class="col-6"><img src="../imgs/img_10.jpg" alt=""></div>
+            <div class="col-5">
+                <img src="../imgs/hipster_bg.jpg" alt=""></div>
+            <div class="col-5"><img src="../imgs/img_5.jpg" alt=""></div>
+            <div class="col-7">
+                <img src="../imgs/puffin.jpg" alt=""></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let obj = "anime({ targets: '.test' , scale: 2 , opacity: 0.1, background: '#ff0000' , duration: 2000 , easing: 'easeInOutExpo' , direction: 'alternate' , loop: true })";
+        eval(obj);
+    </script>
+</body>
+</html>

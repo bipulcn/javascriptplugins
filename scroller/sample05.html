@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="no-skrollr">
+<head>
+	<meta charset="utf-8" />
+	<title>SectionSnap by Roman Kühl - Example</title>
+	<link rel="stylesheet" type="text/css" href="./css/style05.css" />
+		<link rel="stylesheet" href="../dist/bootstrap.min.css" >
+	<script src="../dist/jquery-3.5.0.min.js" type="text/javascript"></script>
+	<script src="./js/sectionsnap.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<ul class="nav" style="position: fixed; top: 0; z-index: 1000">
+					<li class="nav-item"> <a class="nav-link" href="#one">One</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="#two">Two</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="#three">Three</a> </li>
+				</ul>
+			</div>
+		</div>
+		<div class="sections-wrapper row">
+			<div class="col-12 section s1" id="one"></div>
+			<div class="col-12 section s2" style="min-height: 150vh;" id="two">
+				<h1 style="font-size: 100px; text-align: center; padding: 20px;">content is here 1.</h1>
+				<h1 style="font-size: 100px; text-align: center; padding: 20px;">content is here 2.</h1>
+				<h1 style="font-size: 100px; text-align: center; padding: 20px;">content is here 3.</h1>
+				<h1 style="font-size: 100px; text-align: center; padding: 20px;">content is here 4.</h1>
+				<h1 style="font-size: 100px; text-align: center; padding: 20px;">content is here 5.</h1>
+				<h1 style="font-size: 100px; text-align: center; padding: 20px;">content is here 6.</h1>
+				<h1 style="font-size: 100px; text-align: center; padding: 20px;">content is here 7.</h1>
+			</div>
+			<div class="col-12 section s3" id="three"></div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function() {
+			$(".section").css("min-height", $(window).height() + "px");
+			$(".sections-wrapper").sectionsnap({ delay : 100 , selector : '.section' , reference : 1 , animationTime : 1000 });
+		});
+	</script>
+</body>
+</html>

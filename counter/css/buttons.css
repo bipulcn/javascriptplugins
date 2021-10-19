@@ -1,0 +1,122 @@
+.btn-cust01, .btn-cust02, .btn-cust03, .btn-cust04, .btn-cust05, .btn-cust06, .btn-cust07, .btn-cust08, .btn-cust09, .btn-cust10, 
+.btn-cust11, .btn-cust12, .btn-cust13, .btn-cust14
+{ border: 1px solid #00000033; padding: 0.45rem 1.0rem; overflow: hidden; position: relative; color: #00000077; }
+
+.btn-cust01:before, .btn-cust02:before, .btn-cust01:after, .btn-cust02:after, .btn-cust03:before, .btn-cust03:after { content:' '; position: absolute; width: 100%; height: 100%; background: skyblue; z-index: -1; }
+.btn-cust03:before { bottom: 100%; left: 0%; }
+.btn-cust03:after { top: 100%; left: 0%; }
+.btn-cust01:before, .btn-cust02:before { left: 150%; top: 0; }
+.btn-cust01:after, .btn-cust02:after { top: 0; right: 150%; }
+.btn-cust01:before { transform: skew(45deg); }
+.btn-cust01:after { transform: skew(45deg); }
+
+.btn-cust01:hover, .btn-cust02:hover, .btn-cust03:hover, .btn-cust04:hover, .btn-cust05:hover, .btn-cust06:hover, .btn-cust07:hover, .btn-cust08:hover, .btn-cust09:hover, .btn-cust10:hover,
+.btn-cust11:hover, .btn-cust12:hover, .btn-cust13:hover, .btn-cust14:hover
+{ animation: testAni 0.5s ease-in-out forwards; }
+.btn-cust01:hover:before, .btn-cust02:hover:before { animation: movePre 0.5s ease-in-out forwards; }
+.btn-cust01:hover:after, .btn-cust02:hover:after { animation: moveNxt 0.5s ease-in-out forwards; }
+.btn-cust03:hover:before { animation: movedown 0.5s ease-in-out forwards; }
+.btn-cust03:hover:after { animation: moveup 0.5s ease-in-out forwards; }
+
+@keyframes testAni { 0% { color: #00000077; } 100% { color: #ffffff; } }
+
+@keyframes movePre {
+    0% { left: 150%; }
+    100% { left: 49%; }
+}
+@keyframes moveNxt {
+    0% { right: 150%; }
+    100% { right: 49%; }
+}
+@keyframes movedown { 0% { bottom: 100%; } 100% { bottom: 50%; } }
+@keyframes moveup { 0% { top: 100%; } 100% { top: 50%; } }
+
+.btn-cust04:before, .btn-cust04:after, .btn-cust05:before, .btn-cust05:after, .btn-cust06:before, .btn-cust06:after, .btn-cust07:before, .btn-cust07:after, .btn-cust08:before, .btn-cust09:before, .btn-cust10:before { content:' '; position: absolute; width: 200px; height: 100px; background: rgba(0, 181, 255, 0.5); z-index: -1; }
+.btn-cust04:before, .btn-cust04:after, .btn-cust08:before { transform: skew(45deg); top: 0; right: 100%; }
+.btn-cust04:hover:before, .btn-cust08:hover:before { animation: movergt 0.5s ease-in-out forwards; }
+.btn-cust04:hover:after { animation: movergt 0.5s 0.1s ease-in-out forwards; }
+@keyframes movergt { 0% { right: 100%; } 100% { right: -50%; } }
+
+.btn-cust05:before, .btn-cust05:after { transform: skew(45deg); bottom: 0; left: 100%; }
+.btn-cust05:hover:before { animation: movelft 0.5s ease-in-out forwards; }
+.btn-cust05:hover:after { animation: movelft 0.5s 0.1s ease-in-out forwards; }
+@keyframes movelft { 0% { left: 100%; } 100% { left: -50%; } }
+
+.btn-cust06:before, .btn-cust06:after, .btn-cust09:before { bottom: 100%; left: -50%; }
+.btn-cust06:hover:before, .btn-cust09:hover:before { animation: movedwnf 0.3s 0.1s ease-in-out forwards; }
+.btn-cust06:hover:after { animation: movedwnf 0.3s ease-in-out forwards; }
+@keyframes movedwnf { 0% { bottom: 100%; } 100% { bottom: 0%; } }
+
+.btn-cust07:before, .btn-cust07:after { top: 100%; left: -50%; }
+.btn-cust07:hover:before { animation: moveupf 0.3s 0.1s ease-in-out forwards; }
+.btn-cust07:hover:after { animation: moveupf 0.3s ease-in-out forwards; }
+@keyframes moveupf { 0% { top: 100%; } 100% { top: 0%; } }
+
+.btn-cust10:before { top: 0%; left: 0; transform: scale(0); }
+.btn-cust10:hover:before { animation: scale 0.5s ease-in-out forwards; }
+@keyframes scale { 0% { transform: scale(0); } 100% { transform: scale(1); } }
+
+.btn-cust11:before, .btn-cust12:before, .btn-cust13:before, .btn-cust13:after, .btn-cust14:before
+{ content:' '; position: absolute; width: 200px; height: 100px; background: rgba(0, 181, 255, 0.5); z-index: -1; }
+
+.btn-cust11:before { right: 0; bottom: 0; transform: scale(0); }
+.btn-cust12:before { left: -50%; top: -100%; transform: scale(0); }
+/*.btn-cust12:before { transform-origin: 50% 50%; }*/
+.btn-cust13:before { background: white; z-index: 1 }
+.btn-cust13:after { background: rgba(0, 181, 255, 0.5); }
+.btn-cust13:before, .btn-cust13:after { left: -50%; top: -100%; transform: scale(0); }
+.btn-cust11:hover:before, .btn-cust12:hover:before { animation: scale 0.5s ease-in-out forwards; }
+.btn-cust13:hover:before { animation: revscl 0.5s ease-in-out forwards; border-radius: 50%; }
+.btn-cust13:hover:after { transform: scale(1); }
+.btn-cust14:before { left: 0; bottom: 0; transform: rotate(-90deg); transform-origin: 0% 100%; }
+.btn-cust14:hover:before { animation: rotate 0.5s ease-in-out forwards; }
+@keyframes revscl { 0% { transform: scale(1); } 100% { transform: scale(0); } }
+@keyframes rotate { 0% { transform: rotate(-90deg); } 100% { transform: rotate(0deg); } }
+
+.btn-cust15, .btn-cust16, .btn-cust17, .btn-cust18, .btn-cust19, .btn-cust20 { border: 1px solid #00000033; padding: 0.45rem 1.0rem; overflow: hidden; position: relative; color: #11111188; }
+.btn-cust15:hover, .btn-cust16:hover, .btn-cust17:hover, .btn-cust19:hover, .btn-cust20:hover 
+{ animation: testAni 0.5s ease-in-out forwards; }
+.btn-cust15:before, .btn-cust16:before, .btn-cust16:after, .btn-cust17:before, .btn-cust18:before, .btn-cust19:before, .btn-cust20:before 
+{ content:' '; position: absolute; width: 100%; height: 100%; background: rgba(0, 181, 255, 0.5); z-index: -1; top: 0; left: 0; border-radius: 50% }
+.btn-cust15:before { width: 200%; height: 200%; left: -50%; top: -200%; }
+.btn-cust15:hover:before { animation: 1s appear forwards; }
+
+@keyframes appear { 0% { top: -200%; } 100% { top: -50%; }}
+
+.btn-cust16, .btn-cust16:before, .btn-cust16:after, .btn-cust19, .btn-cust19:before, .btn-cust19:after, .btn-cust20, .btn-cust20:before, .btn-cust20:after { border-radius: 50px; border: none; }
+.btn-cust18, .btn-cust19, .btn-cust20 { border: 1px dashed orange; border-spacing: 10px; }
+.btn-cust16:before, .btn-cust16:after { position: absolute; width: 100px; height: 100px; left: 0; bottom: 0%; transform-origin: 50% 50%; border: 3px dotted gray; background: transparent; transform: scale(0); }
+.btn-cust16:hover { animation: 0.5s ccolr forwards ease-in-out; }
+.btn-cust16:hover:before { animation: 1s cscl forwards ease-in-out infinite; }
+.btn-cust16:hover:after { animation: 1s 0.36s cscl forwards ease-in-out infinite; }
+@keyframes cscl { 0% { transform: scale(0); opacity: 1; } 100% { transform: scale(1.5); opacity: 0.5; } }
+@keyframes ccolr { 0% { color: #00000085; } 100% { color: orange; } }
+
+.btn-cust17, .btn-cust17:before, .btn-cust17:after { border-radius: 0; background: transparent; border: none; }
+.btn-cust17:before, .btn-cust17:after { content: ''; position: absolute; width: 20px; height: 100%; border: 2px solid skyblue; transform: rotate(0deg); top: 0; transform-origin: 50% 50%;  }
+.btn-cust17:before { left: 0%; border-right: none; border-top: none; transform-origin: 0% 100%; }
+.btn-cust17:after { right: 0%; border-color: orange; border-left: none; border-bottom: none; transform-origin: 100% 0%; }
+.btn-cust17:hover { animation: 0.5s colopa forwards ease-in-out; }
+.btn-cust17:hover:before { animation: 0.5s mvlft forwards ease-in-out; }
+.btn-cust17:hover:after { animation: 0.5s mvrgt forwards ease-in-out; }
+@keyframes mvlft{ 0% { left: 0; transform: rotate(0deg); } 100% { left: 100%; transform: rotate(-90deg); } }
+@keyframes mvrgt{ 0% { right: 0;  transform: rotate(0deg); } 100% { right: 100%; transform: rotate(-90deg); } }
+
+.btn-cust18 { padding: 0.45rem 1.0rem; overflow: hidden; position: relative; color: #11111188; border: none; border-radius: 0; background: #8372ff33; transition: 1s color; }
+.btn-cust18:before, .btn-cust18:after { content: ''; position: absolute; width: 20px; height: 100%; border: 2px solid skyblue; top: 0; border-radius: 0; background: transparent;  }
+.btn-cust18:before { left: 0%; top: 0%; border-right: none; border-top: none; transform-origin: 0% 100%; }
+.btn-cust18:after { right: 0%; top: 0%; border-color: orange; border-left: none; border-bottom: none; transform-origin: 100% 0%; }
+.btn-cust18:hover { color: orange; }
+.btn-cust18:hover:before { animation: 0.5s mvlftn forwards ease-in-out; }
+.btn-cust18:hover:after { animation: 0.5s mvrgtn forwards ease-in-out; }
+@keyframes mvlftn{ 0% { left: 0; top: 0; transform: rotate(0deg); } 55% { left: 100%; top:-0%; transform: rotate(-90deg); } 100% { left: 100%; top:-100%; transform: rotate(-180deg); } }
+@keyframes mvrgtn{ 0% { right: 0; top: 0; transform: rotate(0deg); } 55% { right: 100%; top: 0%; transform: rotate(-90deg); } 100% { right: 100%; top: 100%; transform: rotate(-180deg); } }
+
+/*@keyframes colopa { 0% { color: #00000085; opacity: 1; } 50% { opacity: 0.5; } 100% { color: orange; opacity: 1; } }*/
+
+.rotbox, .rotbox1, .rotbox2, .rotbox3 { width: 100px; height: 65px; background: orange; animation: 4s trot linear infinite alternate; }
+.rotbox { transform-origin: 0% 100%; }
+.rotbox1 { transform-origin: 100% 0%; }
+.rotbox2 { transform-origin: 0% 0%; }
+.rotbox3 { transform-origin: 50% 50%; }
+@keyframes trot { 0% { transform: rotate(0deg); } 100% { transform: rotate(90deg); } }

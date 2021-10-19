@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>This is a tile page</title>
+    <link rel="stylesheet" href="../dist/bootstrap.min.css" >
+    <script type="text/javascript" src="../dist/anime.min.js"></script>
+    <style type="text/css">
+    	img { max-width: 100%; }
+    </style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<h3>This is a sample image tyle design</h3>
+				<div>We are going to make a system so that any shape will work with single image. We are going to define a image with a class name which will set the property as tile. Then we are going to set some property of the image. </div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+				<img class="tileclip" src="../imgs/img_1.jpg">
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+				<img class="tileclip" src="../imgs/img_2.jpg">
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+<svg class="svg-defs" id='svgcliper'>
+	<defs>
+        <clipPath id="clip1">
+        </clipPath>
+	</defs>
+</svg>
+
+	<script type="text/javascript" src="./js/tileimg.js"></script>
+</body>
+</html>

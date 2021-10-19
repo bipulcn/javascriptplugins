@@ -1,0 +1,14 @@
+/* Whats the problem with tis file*/
+
+html {
+  scroll-behavior: smooth; font-family: 'Roboto', 'Raleway', sans-serif; font-size: 14px; color: #444;
+}
+
+img { width: 100%; margin: 20px auto; }
+
+.nav { position: fixed; top: 0; background: white; z-index: 100; }
+.row .col-12 { min-height: 100vh; }
+.active { color: skyblue; }
+
+#infos { position: absolute; padding: 10px; min-height: 40px; min-width: 100px; background: #000000c4; color: white; top: 10px; z-index: 100; box-shadow: 0 0 15px rgba(0, 0, 0, 0.75); border-radius: 3px; }
+#infos th, #infos td { padding: 1px 10px; }

@@ -1,0 +1,72 @@
+body { background-position: 3.5px 0px; animation: aniBg 10s linear infinite alternate; background-color: transparent; 
+background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23aaaaaa' fill-opacity='0.5'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+
+.testSvg { width: 350px; height: 200px; margin: 10px auto; background-position: 0px 0px; animation: animatedBackground 5s linear infinite alternate;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='595.28px' height='841.89px' viewBox='0 0 595.28 841.89' style='enable-background:new 0 0 595.28 841.89;' xml:space='preserve'%3E%3Cpath style='fill:%232BB673;' d='M89.096,74.877c-7.655,0-13.861,6.206-13.861,13.861s6.206,13.861,13.861,13.861 c7.655,0,13.861-6.206,13.861-13.861S96.751,74.877,89.096,74.877z M89.096,96.333c-4.194,0-7.595-3.401-7.595-7.595 s3.4-7.594,7.595-7.594c4.195,0,7.595,3.4,7.595,7.594S93.291,96.333,89.096,96.333z'/%3E%3Cpath style='fill:%232BB673;' d='M103.489,36.166c-4.806,0-8.702,3.896-8.702,8.702s3.896,8.702,8.702,8.702s8.702-3.896,8.702-8.702 S108.295,36.166,103.489,36.166z M103.489,49.636c-2.634,0-4.768-2.134-4.768-4.768c0-2.633,2.134-4.768,4.768-4.768 c2.633,0,4.768,2.135,4.768,4.768C108.257,47.501,106.122,49.636,103.489,49.636z'/%3E%3Cpath style='fill:%232BB673;' d='M112.191,96.333c-3.46,0-6.266,2.805-6.266,6.266c0,3.461,2.806,6.267,6.266,6.267 c3.461,0,6.266-2.806,6.266-6.267C118.457,99.138,115.652,96.333,112.191,96.333z M112.191,106.032 c-1.896,0-3.433-1.537-3.433-3.434c0-1.896,1.537-3.433,3.433-3.433c1.896,0,3.434,1.538,3.434,3.433 C115.625,104.495,114.087,106.032,112.191,106.032z'/%3E%3C/svg%3E%0A"); }
+
+@keyframes animatedBackground {
+  from, to { animation-timing-function: linear; 
+    background-position: 0 0;
+  }
+  20% { animation-timing-function: linear; 
+    background-position: 1.5% 1%;
+    transform: rotate(20deg) scale(1.5);
+  }
+  40% { animation-timing-function: linear; 
+    background-position: -1% 1%;
+    transform: rotate(10deg);
+    filter: hue-rotate(50deg);
+  }
+  60% { animation-timing-function: linear; 
+    background-position: -1% -1%;
+    transform: rotate(-10deg) scale(0.9);
+    filter: grayscale(1);
+  }
+  80% { animation-timing-function: linear; 
+    background-position: 1% -1%;
+    transform: rotate(5deg) scale(1.2);
+  }
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+}
+@keyframes float2 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(20px) rotate(30deg);
+  }
+  85% { transform: rotate(-10deg); }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes aniBg {
+    from {
+        background-position: 0 0;
+        background-size: 5%;
+    }
+    to {
+        background-position: -20% -10%;
+        background-size: 7%;
+    }
+}
+.disImg img { animation: float 6s ease-in-out infinite;  }
+
+.disImg:after { content: " "; position: absolute;top: -50px; z-index: -1; left: -100px; width: 126px;
+    height: 130px; background-position: 0px 0px; animation: float2 10s ease-in-out infinite;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='595.28px' height='841.89px' viewBox='0 0 595.28 841.89' style='enable-background:new 0 0 595.28 841.89;' xml:space='preserve'%3E%3Cpath style='fill:%232BB673;' d='M89.096,74.877c-7.655,0-13.861,6.206-13.861,13.861s6.206,13.861,13.861,13.861 c7.655,0,13.861-6.206,13.861-13.861S96.751,74.877,89.096,74.877z M89.096,96.333c-4.194,0-7.595-3.401-7.595-7.595 s3.4-7.594,7.595-7.594c4.195,0,7.595,3.4,7.595,7.594S93.291,96.333,89.096,96.333z'/%3E%3Cpath style='fill:%232BB673;' d='M103.489,36.166c-4.806,0-8.702,3.896-8.702,8.702s3.896,8.702,8.702,8.702s8.702-3.896,8.702-8.702 S108.295,36.166,103.489,36.166z M103.489,49.636c-2.634,0-4.768-2.134-4.768-4.768c0-2.633,2.134-4.768,4.768-4.768 c2.633,0,4.768,2.135,4.768,4.768C108.257,47.501,106.122,49.636,103.489,49.636z'/%3E%3Cpath style='fill:%232BB673;' d='M112.191,96.333c-3.46,0-6.266,2.805-6.266,6.266c0,3.461,2.806,6.267,6.266,6.267 c3.461,0,6.266-2.806,6.266-6.267C118.457,99.138,115.652,96.333,112.191,96.333z M112.191,106.032 c-1.896,0-3.433-1.537-3.433-3.434c0-1.896,1.537-3.433,3.433-3.433c1.896,0,3.434,1.538,3.434,3.433 C115.625,104.495,114.087,106.032,112.191,106.032z'/%3E%3C/svg%3E%0A");
+  } 
+.disImg:before { content: "it starts"; }

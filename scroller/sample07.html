@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroller test</title>
+    <link rel="stylesheet" href="../dist/bootstrap.min.css" >
+    <script src="../dist/jquery-3.5.0.min.js" ></script>
+    <script src="../dist/bootstrap.min.js" ></script>
+    <link rel="stylesheet" type="text/css" href="./css/scroller.css">
+    <link rel="stylesheet" type="text/css" href="./css/object.css">
+    <!-- <script src="./js/scroller.js"></script> -->
+    <!-- <script src="./js/scrollmanage.js"></script> -->
+    <script src="./js/objmanage.js"></script>
+</head>
+<body data-spy="scroll" data-target="#navbar-example">
+    <div class="container-fluid" id="body">
+            <div id="navbar-example">
+                <ul class="nav topmenu">
+                    <li class="nav-item"><a class="nav-link" href="#item01">item 01</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#item02">item 02</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#item03">item 03</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#item04">item 04</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#item05">item 05</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#item06">item 06</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#item07">item 07</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#item08">item 08</a></li>
+                </ul>
+            </div>
+        <div class="row justify-content-center" data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+            <div class="col-12" id="item01">
+                <div><h1>Item section 01</h1></div>
+                <div class="row justify-content-center">
+                    <div class="col-11">
+                        <div class="box square" style="position:absolute;left:10%;top:230px"></div>
+                        <div class="box square" style="position:absolute;left:80%;top:330px"></div>
+                        <div class="box square" style="position:absolute;left:70%;top:430px"></div>
+                        <div class="box square" style="position:absolute;left:60%;top:530px"></div>
+                        <div class="box square" style="position:absolute;left:20%;top:130px"></div>
+                        <div class="box square" style="position:absolute;left:30%;top:390px"></div>
+                        <div class="box square" style="position:absolute;left:40%;top:430px"></div>
+                        <div class="box square" style="position:absolute;left:50%;top:130px"></div>
+                    </div>
+                    <div class="col-5"><div id="proimg"><div><img src="../imgs/dahlia.jpg" alt=""></div></div></div>
+                    <!-- <div class="col-11"></div> -->
+                    <div class="col-7"><div id="proimg1"><div><img src="../imgs/frog.jpg" alt=""></div></div></div>  
+                    <div class="col-11"><div class="box"  style="position:absolute;left: 50%"></div></div>
+                </div>
+            </div>
+            <div class="col-12" id="item02">
+                <div><h1>Item section 02</h1></div>
+                <div class="row justify-content-center">
+                    <div class="col-4"><div id="proimg2"><div class="box"><img src="../imgs/img_10.jpg" alt=""></div></div></div>
+                    <div class="col-5"><div id="proimg3"><div class="box"><img src="../imgs/hipster_bg.jpg" alt=""></div></div></div>
+                    <div class="col-3"><div id="proimg4"><div class="box"><img src="../imgs/img_5.jpg" alt=""></div></div></div>
+                </div>
+            </div>
+            <div class="col-12" id="item03">
+                <div><h1>Item section 03</h1></div>
+                <div class="row justify-content-center">
+                    <div class="col-7"><div id="proimg5"><div><img src="../imgs/puffin.jpg" alt=""></div></div></div>
+                    <div class="col-4"><div id="proimg6"><div><img src="../imgs/img_6.jpg" alt=""></div></div></div>
+                </div>
+            </div>
+            <div class="col-12" id="item04">
+                <div><h1>Item section 04</h1></div>
+                <div class="row justify-content-center">
+                    <div class="col-7"><div id="proimg7"><div><img src="../imgs/img_2.jpg" alt=""></div></div></div>
+                    <div class="col-4"><div id="proimg8"><div><img src="../imgs/img_1.jpg" alt=""></div></div></div>
+                </div>
+            </div>
+            <div class="col-12" id="item05">
+                <div><h1>Item section 05</h1></div>
+                <div class="row justify-content-center">
+                    <div class="col-4"><div id="proimg9"><div><img src="../imgs/img_11.jpg" alt=""></div></div></div>
+                    <div class="col-4"><div id="proimg10"><div><img src="../imgs/img_2.jpg" alt=""></div></div></div>
+                    <div class="col-3"><div id="proimg11"><div><img src="../imgs/img_13.jpg" alt=""></div></div></div>                   
+                </div>
+            </div>
+            <div class="col-12" id="item06">
+                <div><h1>Item section 06</h1></div>
+                <div class="row justify-content-center">
+                    <div class="col-4"><div id="proimg12"><div><img src="../imgs/img_4.jpg" alt=""></div></div></div>
+                    <div class="col-3"><div id="proimg13"><div><img src="../imgs/img_14.jpg" alt=""></div></div></div>
+                </div>
+            </div>
+            <div class="col-12" id="item07">
+                <div><h1>Item section 07</h1></div>
+                <div class="row justify-content-center">                    
+                    <div class="col-4"><div id="proimg12"><div><img src="../imgs/img_4.jpg" alt=""></div></div></div>
+                    <div class="col-3"><div id="proimg13"><div><img src="../imgs/img_14.jpg" alt=""></div></div></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row" style="min-height: fit-content;">
+            <div class="col-10"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-10"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-10"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-10">
+                <div>All the right reserved by @bdmeditech.</div>
+            </div>
+            <div class="col-10"><hr style="margin-bottom: 50px; border:none;"></div>
+        </div>
+    </div>
+    <div id="infos">
+        
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('body').scrollspy({ target: '#navbar-example' })
+        });
+    </script>
+</body>
+</html>

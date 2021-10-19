@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroller test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- <script src="./js/scroller.js"></script> -->
+    <script src="./js/scrolltopos.js"></script>
+</head>
+<body>
+    <div class="container-fluid" id="body">
+        <div class="row" style="min-height: fit-content;">
+            <div class="col-12">
+                <ul class="nav topmenu">
+                    <li class="nav-item"><span class="nav-link" data-hash="#item01">item 01</span></li>
+                    <li class="nav-item"><span class="nav-link" data-hash="#item02">item 02</span></li>
+                    <li class="nav-item"><span class="nav-link" data-hash="#item03">item 03</span></li>
+                    <li class="nav-item"><span class="nav-link" data-hash="#item04">item 04</span></li>
+                    <li class="nav-item"><span class="nav-link" data-hash="#item05">item 05</span></li>
+                    <li class="nav-item"><span class="nav-link" data-hash="#item06">item 06</span></li>
+                    <li class="nav-item"><span class="nav-link" data-hash="#item07">item 07</span></li>
+                    <li class="nav-item"><span class="nav-link" data-hash="#item08">item 08</span></li>
+                </ul><br><br>
+                <h1>This is a sample page.</h1>
+            </div>
+            <div class="col-12">
+                <div class="btn btn-primary" onclick="scroll(0, 600)">Button </div>
+                <div class="btn btn-custom">Button</div>
+                <button onclick="scrollby(500)">click to scroll down 100 pixels</button>
+            </div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div id="item01"><h1>Item section 01</h1></div>
+                <div class="row justify-content-center">                  
+                    <div class="col-5"><div id="proimg"><div><img src="../imgs/dahlia.jpg" alt=""></div></div></div>
+                    <div class="col-7"><div id="proimg1"><div><img src="../imgs/frog.jpg" alt=""></div></div></div>  
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="item02"><h1>Item section 02</h1></div>
+                <div class="row justify-content-center">
+                    <div class="col-4"><div id="proimg2"><div><img src="../imgs/img_10.jpg" alt=""></div></div></div>
+                    <div class="col-5"><div id="proimg3"><div><img src="../imgs/hipster_bg.jpg" alt=""></div></div></div>
+                    <div class="col-3"><div id="proimg4"><div><img src="../imgs/img_5.jpg" alt=""></div></div></div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="item03"><h1>Item section 03</h1></div>
+                <div class="row justify-content-center">
+                    <div class="col-7"><div id="proimg5"><div><img src="../imgs/puffin.jpg" alt=""></div></div></div>
+                    <div class="col-4"><div id="proimg6"><div><img src="../imgs/img_6.jpg" alt=""></div></div></div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="item04"><h1>Item section 04</h1></div>
+                <div class="row justify-content-center">
+                    <div class="col-7"><div id="proimg7"><div><img src="../imgs/img_2.jpg" alt=""></div></div></div>
+                    <div class="col-4"><div id="proimg8"><div><img src="../imgs/img_1.jpg" alt=""></div></div></div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="item05"><h1>Item section 05</h1></div>
+                <div class="row justify-content-center">
+                    <div class="col-4"><div id="proimg9"><div><img src="../imgs/img_11.jpg" alt=""></div></div></div>
+                    <div class="col-4"><div id="proimg10"><div><img src="../imgs/img_2.jpg" alt=""></div></div></div>
+                    <div class="col-3"><div id="proimg11"><div><img src="../imgs/img_13.jpg" alt=""></div></div></div>                   
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="item06"><h1>Item section 06</h1></div>
+                <div class="row justify-content-center">
+                    <div class="col-4"><div id="proimg12"><div><img src="../imgs/img_4.jpg" alt=""></div></div></div>
+                    <div class="col-3"><div id="proimg13"><div><img src="../imgs/img_14.jpg" alt=""></div></div></div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="item07"><h1>Item section 07</h1></div>
+                <div class="row justify-content-center">
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="row" style="min-height: fit-content;">
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-12"><button class="btn btn-primary js-up">Scroll Up</button></div>
+            <div class="col-12"><button onClick='scrollItShort()'>Scroll Up</button></div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-12">
+                <div>All the right reserved by @bdmeditech.</div>
+            </div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.querySelector('.js-up').addEventListener('click', () => scrollIt(50));
+
+        function scrollItShort() {
+          window.scrollTo({
+            'behavior': 'smooth',
+            'top': 0
+          });
+        }
+        function scrollby(ypos) {
+            window.scroll({
+              top: ypos,
+              left: 100,
+              behavior: 'smooth'
+            });
+        }
+        // const elm = document.querySelector('.js-section');
+        // scrollIt(elm);
+    </script>
+</body>
+</html>

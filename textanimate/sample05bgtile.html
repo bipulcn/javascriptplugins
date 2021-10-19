@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/bootstrap.min.css" >
+    <script src="../dist/jquery-3.5.0.min.js" ></script>
+    <script type="text/javascript" src="./js/anime.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h1>This is a sample page.</h1>
+            </div>
+            <div class="col-7 parent">
+                <div class="flex">
+                    <div class="box box01"></div>
+                    <div class="box box01"></div>
+                    <div class="box box01"></div>
+                    <div class="box box01"></div>
+                    <div class="box box01"></div>
+                    <div class="box box01"></div>
+                    <div class="box box01"></div>
+                    <div class="box box01"></div>
+                    <div class="box box01"></div>
+                    <div class="box box01"></div>    
+                </div>
+                <div class="flex">
+                    <div class="box box02"></div>
+                    <div class="box box02"></div>
+                    <div class="box box02"></div>
+                    <div class="box box02"></div>
+                    <div class="box box02"></div>
+                    <div class="box box02"></div>
+                    <div class="box box02"></div>
+                    <div class="box box02"></div>
+                    <div class="box box02"></div>
+                    <div class="box box02"></div>    
+                </div>
+                
+            </div>
+            <div class="col-5"><img src="../imgs/img_6.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        
+    </script>
+    <style type="text/css">
+        img { width: 100%; }
+        .parent { background: url("../imgs/dahlia.jpg"); padding: 0; background-size: 100%  }
+        .flex { display: flex; padding: 0; width: inherit; height: inherit; }
+        .box { width: 10%; height: 100px; }
+        .box01, .box02 { background: url("../imgs/dahlia.jpg"); background-size: 1000%; }
+        .box01:nth-child(1) { background-position: 0 0%; }
+        .box02:nth-child(1) { background-position: 0 -100px; }
+        .box01:nth-child(2) { background-position: -100% 0; }
+        .box02:nth-child(2) { background-position: -100% -100px; }
+        .box01:nth-child(3) { background-position: -200% 0; }
+        .box02:nth-child(3) { background-position: -200% -100px; }
+        .box01:nth-child(4) { background-position: -300% 0; }
+        .box02:nth-child(4) { background-position: -300% -100px; }
+        .box01:nth-child(5) { background-position: -400% 0; }
+        .box02:nth-child(5) { background-position: -400% -100px; }
+        .box01:nth-child(6) { background-position: -500% 0; }
+        .box02:nth-child(6) { background-position: -500% -100px; }
+        .box01:nth-child(7) { background-position: -600% 0; }
+        .box02:nth-child(7) { background-position: -600% -100px; }
+        .box01:nth-child(8) { background-position: -700% 0; }
+        .box02:nth-child(8) { background-position: -700% -100px; }
+        .box01:nth-child(9) { background-position: -800% 0; }
+        .box02:nth-child(9) { background-position: -800% -100px; }
+        .box01:nth-child(10) { background-position: -900% 0; }
+        .box02:nth-child(10) { background-position: -900% -100px; }
+    </style>
+</body>
+</html>

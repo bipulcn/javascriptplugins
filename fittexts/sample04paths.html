@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>This is a tile page</title>
+    <link rel="stylesheet" href="../dist/bootstrap.min.css" >
+    <script type="text/javascript" src="../dist/anime.min.js"></script>
+    <style type="text/css">
+    	img { max-width: 100%; }
+    </style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<h3>This is a sample image tyle design</h3>
+				<div>We are going to make a system so that any shape will work with single image. We are going to define a image with a class name which will set the property as tile. Then we are going to set some property of the image. </div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+				<img class="tileclip" src="../imgs/img_1.jpg">
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+				<img class="tileclip2" src="../imgs/img_2.jpg">
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+				<div class="tileclip3"></div>
+				<div>
+					We are going to make a system so that any shape will work with single image. We are going to define a image with a class name which will set the property as tile. Then we are going to set some property of the image. 
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+				<div class="tileclip4"></div>
+				<div style="text-align: justify;"> We are going to make a system so that any shape will work with single image. We are going to define a image with a class name which will set the property as tile. Then we are going to set some property of the image. </div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+<svg class="svg-defs" id='svgcliper'>
+	<!-- <defs> -->
+        <!-- <clipPath id="clip1"> -->
+        	<path d="M 10 80 Q 95 10 180 80 T 10 80 Z" stroke="black" fill="orange"/>
+        <!-- </clipPath> -->
+	<!-- </defs> -->
+</svg>
+<svg width="325" height="325" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 80 80
+           A 45 45, 0, 0, 0, 125 125
+           L 125 80 Z" fill="green"/>
+  <path d="M 230 80
+           A 45 45, 0, 1, 0, 275 125
+           L 275 80 Z" fill="red"/>
+  <path d="M 80 230
+           A 45 45, 0, 0, 1, 125 275
+           L 125 230 Z" fill="purple"/>
+  <path d="M 230 230
+           A 45 45, 0, 1, 1, 275 275
+           L 275 230 Z" fill="blue"/>
+</svg>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+  	<filter id="f1" x="0" y="0">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+    </filter>
+    <clipPath id="clip1">
+      <path fill="#FF0066" d="M37.5,-48.9C50,-42.6,62.3,-33.4,65.9,-21.6C69.5,-9.7,64.5,4.8,61.6,22C58.8,39.2,58.1,59.2,48.2,70.2C38.3,81.3,19.2,83.5,1.6,81.3C-15.9,79.1,-31.8,72.4,-42.4,61.5C-52.9,50.7,-58,35.6,-60.3,21.3C-62.7,7,-62.2,-6.5,-59.7,-21C-57.2,-35.5,-52.7,-50.9,-42.4,-57.9C-32.1,-64.9,-16.1,-63.5,-1.8,-61.1C12.6,-58.7,25.1,-55.2,37.5,-48.9Z" transform="translate(190 250) scale(2.4)" />
+    </clipPath>
+    <clipPath id="clip2">
+      <path fill="#FF0066" d="M43.2,-72.7C54.2,-68.5,60.1,-53.3,66.9,-39.4C73.6,-25.4,81.2,-12.7,78.4,-1.6C75.6,9.4,62.3,18.9,52.8,28.1C43.3,37.2,37.5,46.1,29.4,50.6C21.2,55.1,10.6,55.2,-1.7,58.2C-14,61.2,-28.1,67,-37.3,63.1C-46.5,59.2,-50.9,45.6,-52.7,33.4C-54.6,21.3,-53.9,10.6,-56.4,-1.5C-59,-13.6,-64.9,-27.2,-63.9,-40.9C-63,-54.7,-55.3,-68.5,-43.5,-72.2C-31.7,-76,-15.8,-69.6,0.1,-69.8C16.1,-70.1,32.2,-76.9,43.2,-72.7Z" transform="translate(190 250) scale(2.4)" filter="url(#f1)" />
+    </clipPath>
+    <clipPath id="clip3">
+      <path fill="#FF0066" d="M46.2,-74.7C59.4,-72.4,69.3,-59,70.7,-44.8C72,-30.5,64.9,-15.2,65.8,0.5C66.7,16.3,75.7,32.6,74,46.3C72.2,59.9,59.8,71,45.7,75.7C31.6,80.5,15.8,79,1.2,76.9C-13.3,74.8,-26.7,72,-39.8,66.7C-53,61.4,-66,53.5,-71.9,41.9C-77.7,30.4,-76.6,15.2,-74.9,1C-73.2,-13.3,-71.1,-26.5,-66.2,-39.9C-61.4,-53.3,-53.9,-66.8,-42.4,-70.1C-30.9,-73.5,-15.4,-66.7,0.5,-67.6C16.5,-68.5,33,-77.1,46.2,-74.7Z" transform="translate(190 250) scale(2.4)" />
+    </clipPath>
+    <clipPath id="clip4">
+      <path fill="#FF0066" d="M43.8,-72.2C55.6,-69.1,63.1,-54.9,69.3,-41.1C75.5,-27.2,80.4,-13.6,78.4,-1.1C76.5,11.4,67.8,22.7,59.4,32.8C51,42.9,43,51.7,33.1,58.6C23.3,65.5,11.6,70.6,-1.5,73.2C-14.6,75.8,-29.3,75.9,-40.1,69.5C-50.8,63.2,-57.7,50.2,-60.6,37.6C-63.5,24.9,-62.5,12.4,-60.2,1.3C-57.9,-9.8,-54.4,-19.6,-51.5,-32.3C-48.6,-45.1,-46.4,-60.7,-37.9,-65.7C-29.4,-70.7,-14.7,-65,0.7,-66.2C16,-67.3,32,-75.3,43.8,-72.2Z" transform="translate(190 250) scale(2.4)" />
+    </clipPath>
+    <clipPath id="clip5">
+      <path fill="#FF0066" d="M35.6,-61C48.9,-53.9,64.5,-50.1,75.4,-40.4C86.4,-30.8,92.8,-15.4,90.8,-1.1C88.9,13.1,78.6,26.3,68.6,37.7C58.7,49.1,49.1,58.7,37.7,68.4C26.3,78,13.2,87.7,2.3,83.8C-8.6,79.8,-17.3,62.4,-28.9,52.9C-40.5,43.3,-55,41.7,-63.5,34.3C-72,26.8,-74.4,13.4,-70.2,2.5C-65.9,-8.5,-54.9,-16.9,-48,-27.2C-41.1,-37.4,-38.3,-49.4,-30.9,-59.9C-23.6,-70.4,-11.8,-79.4,-0.3,-78.8C11.1,-78.2,22.3,-68,35.6,-61Z" transform="translate(190 250) scale(2.4)" />
+    </clipPath>
+    <clipPath id="clip6">
+      <path fill="#FF0066" d="M37.1,-62.6C47.1,-58.4,53.8,-46.6,59.5,-35C65.2,-23.3,69.9,-11.6,69.9,0C69.8,11.6,65.1,23.2,58.2,32.9C51.4,42.6,42.5,50.4,32.4,61C22.4,71.6,11.2,85,-1.7,87.9C-14.5,90.7,-29.1,83.1,-36.3,70.9C-43.6,58.7,-43.7,42,-49,29.4C-54.3,16.8,-64.8,8.4,-65.5,-0.4C-66.3,-9.3,-57.4,-18.6,-51.8,-30.7C-46.2,-42.7,-44,-57.5,-35.9,-62.9C-27.8,-68.3,-13.9,-64.3,-0.2,-63.9C13.5,-63.5,27,-66.8,37.1,-62.6Z" transform="translate(190 250) scale(2.4)" />
+    </clipPath>
+    <clipPath id="clip7">
+      <path fill="#FF0066" d="M36.4,-59.3C49.1,-55.7,62.7,-49.9,68.8,-39.6C74.9,-29.4,73.5,-14.7,71,-1.5C68.5,11.8,64.8,23.5,60.6,37C56.3,50.5,51.6,65.8,41.4,71.1C31.2,76.5,15.6,72,-0.2,72.2C-15.9,72.5,-31.8,77.6,-41.2,71.8C-50.6,66,-53.4,49.2,-62,35.4C-70.6,21.6,-84.9,10.8,-87.3,-1.3C-89.6,-13.5,-79.9,-27,-69.4,-37.5C-58.9,-48,-47.6,-55.4,-35.9,-59.5C-24.2,-63.7,-12.1,-64.5,-0.1,-64.3C11.8,-64.1,23.7,-62.8,36.4,-59.3Z" transform="translate(190 250) scale(2.4)" />
+    </clipPath>
+    <clipPath id="clip8">
+      <path fill="#FF0066" d="M29.5,-52.1C40.2,-44.9,52.3,-41,63.3,-32.9C74.3,-24.8,84.1,-12.4,86.2,1.2C88.3,14.9,82.8,29.7,73,39.9C63.2,50.1,49.3,55.6,36.4,64.1C23.5,72.5,11.8,84,-1.4,86.3C-14.5,88.7,-28.9,81.9,-40.1,72.4C-51.3,63,-59.3,50.9,-63.7,38.4C-68.1,25.9,-69,12.9,-66.5,1.5C-63.9,-10,-58,-20,-52.8,-31.2C-47.6,-42.4,-43.2,-54.7,-34.5,-63.2C-25.8,-71.7,-12.9,-76.3,-1.8,-73.2C9.4,-70.1,18.7,-59.4,29.5,-52.1Z" transform="translate(190 250) scale(2.4)" />
+    </clipPath>
+    <clipPath id="clip9">
+      <path fill="#FF0066" d="M41,-65.9C54.6,-63.1,68.1,-55.1,71.5,-43.3C74.8,-31.4,68.1,-15.7,63.9,-2.4C59.7,10.9,58.1,21.7,52.4,29.7C46.8,37.6,37.1,42.5,27.7,46.6C18.3,50.6,9.1,53.9,-3,59C-15.1,64.2,-30.2,71.4,-38.8,66.8C-47.4,62.3,-49.5,46,-50.4,33C-51.2,19.9,-50.7,9.9,-50.4,0.2C-50,-9.5,-49.7,-19,-49.3,-32.9C-48.9,-46.7,-48.4,-64.8,-40.1,-70.6C-31.9,-76.5,-15.9,-70.2,-1.1,-68.2C13.7,-66.3,27.4,-68.7,41,-65.9Z" transform="translate(190 250) scale(2.4)" />
+    </clipPath>
+    <clipPath id="clip10">
+      <path fill="#FF0066" d="M37.9,-66.3C48.1,-59.8,54.5,-47.5,57.3,-35.5C60,-23.5,59.1,-11.7,57,-1.2C54.9,9.3,51.7,18.6,50.3,33.1C48.9,47.5,49.4,67,41.4,74.7C33.3,82.4,16.7,78.3,3.3,72.5C-10,66.7,-20,59.4,-31.2,53.5C-42.4,47.6,-54.7,43.2,-62.5,34.5C-70.4,25.8,-73.7,12.9,-75.9,-1.3C-78,-15.4,-79.1,-30.9,-73.2,-42.9C-67.3,-54.9,-54.5,-63.5,-41.1,-68.1C-27.7,-72.8,-13.9,-73.5,0,-73.5C13.9,-73.5,27.7,-72.8,37.9,-66.3Z" transform="translate(190 250) scale(2.4)" />
+    </clipPath>
+    <clipPath id="clip11">
+      <path fill="#FF0066" d="M36.4,-59.4C47.3,-56.9,56.1,-47.2,65.8,-36.1C75.5,-25,86,-12.5,87.7,0.9C89.3,14.4,82,28.8,73.4,41.8C64.8,54.7,54.9,66.3,42.4,73.3C30,80.4,15,82.9,0.9,81.2C-13.1,79.6,-26.2,73.9,-39.8,67.5C-53.4,61.1,-67.4,54.1,-70.2,42.7C-73,31.3,-64.5,15.7,-63.6,0.5C-62.6,-14.6,-69.2,-29.2,-66.7,-40.9C-64.1,-52.7,-52.4,-61.6,-39.8,-63.1C-27.2,-64.6,-13.6,-58.7,-0.4,-58.1C12.8,-57.4,25.6,-62,36.4,-59.4Z" transform="translate(190 250) scale(2.4)" />
+    </clipPath>
+    <clipPath id="clip12">
+      <path fill="#FF0066" d="M39,-64.4C50.8,-60.7,60.9,-50.9,69.7,-39.1C78.5,-27.3,86,-13.7,87.7,0.9C89.3,15.5,85,31.1,75.8,42.1C66.6,53.2,52.4,59.7,39,67.4C25.5,75,12.8,83.8,0.9,82.2C-10.9,80.5,-21.7,68.5,-32.3,59.2C-42.9,49.8,-53.2,43.2,-59,33.8C-64.9,24.4,-66.3,12.2,-66.3,0C-66.2,-12.2,-64.7,-24.3,-58.9,-33.8C-53.1,-43.3,-43,-50.1,-32.5,-54.5C-21.9,-58.9,-11,-60.9,1.3,-63.2C13.6,-65.5,27.2,-68.1,39,-64.4Z" transform="translate(190 250) scale(2.4)" />
+    </clipPath>
+  </defs>
+
+      <path fill="#FF0066" d="M37.5,-48.9C50,-42.6,62.3,-33.4,65.9,-21.6C69.5,-9.7,64.5,4.8,61.6,22C58.8,39.2,58.1,59.2,48.2,70.2C38.3,81.3,19.2,83.5,1.6,81.3C-15.9,79.1,-31.8,72.4,-42.4,61.5C-52.9,50.7,-58,35.6,-60.3,21.3C-62.7,7,-62.2,-6.5,-59.7,-21C-57.2,-35.5,-52.7,-50.9,-42.4,-57.9C-32.1,-64.9,-16.1,-63.5,-1.8,-61.1C12.6,-58.7,25.1,-55.2,37.5,-48.9Z" transform="translate(40 30) scale(0.25)" filter="url(#f1)" />
+</svg>
+
+
+<svg class="svg-defs" id='svgcliper'>
+	<defs>
+    <clipPath id="clip1">
+      <path d="M20,130 Q80,105 50,200 T90,230" fill="none" stroke="blue" stroke-width="5"/>
+    </clipPath>
+	    <clipPath id="clipping-with-text">
+	      <polygon points="98 153 38 185 49 118 1 70 68 61 98 1 128 61 195 70 147 118 158 185"/>
+	      <polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:1" />
+	      <circle cx="50" cy="250" r="40" stroke="black" stroke-width="3" fill="red" />
+	      <polygon points="339,243 296,268 252,243 252,193 296,168 339,193" />
+	    </clipPath>
+	</defs>
+</svg>
+
+<style type="text/css">
+	.tileclip { clip-path: url(#clip2); }
+	.tileclip2 { clip-path: url(#clipping-with-text); }
+	.tileclip3 { background: url(../imgs/img_2.jpg); background-size: cover; clip-path: circle(130px at 50px 130px); shape-outside: circle(130px at 60px 130px); height: 300px; width: 300px; float: left; }
+	.tileclip4 { background: url(../imgs/img_5.jpg); background-size: contain; height: 300px; width: 300px; shape-outside: polygon(60% 10%, 100% 50%, 60% 80%, 20% 50%); clip-path: polygon(60% 10%, 100% 50%, 60% 80%, 20% 50%); float: left; }
+
+
+
+.shape-triange { clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+.shape-poly { clip-path: polygon(7% 8%, 90% 3%, 98% 94%, 0% 100%); }
+.shape-rhombus { clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+.shape-pentagon { clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); }
+.shape-hexagon { clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); }
+.shape-octagon { clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
+.shape-bevel { clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%); }
+.shape-rabbet { clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%); }
+.shape-message { clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
+.shape-close { clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%); }
+.shape-star { clip-path: polygon(50% 0%, 70% 23%, 98% 35%, 80% 61%, 79% 91%, 50% 81%, 21% 91%, 22% 59%, 2% 35%, 31% 22%); }
+.shape-frame { clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%); }
+.shape-circle { clip-path: circle(50% at 50% 50%); }
+.shape-polys { clip-path: url(#clip5); }
+
+</style>
+</body>
+</html>

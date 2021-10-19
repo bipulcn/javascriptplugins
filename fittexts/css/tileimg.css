@@ -1,0 +1,28 @@
+body { background: offwhite; }
+img { max-width: 100%; }
+
+.shapepar01 { /*background: url(../../imgs/img_1.jpg) no-repeat; background-size: 100%;*/ padding: 0;display: flex;flex-wrap: wrap; height: fit-content; }
+.shape01 { background: url(../../imgs/img_1.jpg); background-size: calc(200% + 30px); min-width: calc(50% - 15px); height: 200px; display: inline-block; clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); margin: 7px 15px 0px 0px; }
+/*.shape01:nth-child(1) { filter: blur(2px); }
+.shape01:last-child { filter: blur(2px); }*/
+.bx01 { margin: 0 auto calc(-25% + 15px) 25%; background-position: calc(50% + 7px) 0%; }
+.bx02 { background-position: 0% -110px; }
+.bx03 { background-position: calc(100% + 15px) -110px; }
+.bx04 { margin: calc(-25% + 21px) auto 0 25%; background-position: calc(50% + 7px) 236px; }
+
+.shapepar02 { /*background: url(../../imgs/img_1.jpg) no-repeat; background-size: 100%;*/ padding: 0;display: flex;flex-wrap: wrap; }
+.shape02 { background: url(../../imgs/img_1.jpg); background-size: calc(300% + 30px); background-position: 25% 20%; min-width: 30%; height: 120px; display: inline-block; clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); margin: -120px 0 0px 4px; }
+.shape02:nth-child(1), .shape02:nth-child(2) { margin-top: 0 !important; }
+.shape02:nth-child(5n+1) { margin-left: calc(15% + 8px); }
+.shape02:nth-child(1) { background-position: 23.5% 24px; }
+.shape02:nth-child(2) { background-position: 69% 0; }
+.shape02:nth-child(3) { background-position: 0% calc(-60px - 12px); }
+.shape02:nth-child(4) { background-position: 46% calc(-60px - 12px); }
+.shape02:nth-child(5) { background-position: 92% calc(-60px - 12px); }
+
+.shape02:nth-child(6) { background-position: calc(20% - 10px) calc(-120px - 24px); }
+.shape02:nth-child(7) { background-position: calc(64% - 10px) calc(-110px - 24px); }
+
+.shape02:nth-child(8) { background-position: 0% calc(-180px - 36px); }
+.shape02:nth-child(9) { background-position: 46% calc(-180px - 36px); }
+.shape02:nth-child(10) { background-position: 92% calc(-180px - 36px); }

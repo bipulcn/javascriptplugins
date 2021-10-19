@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/modals.js"></script>
+    <link rel="stylesheet" href="./css/modals.css" />
+    <style>img { width: 100%; margin: 20px auto; }</style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h1>This is a sample page.</h1>
+            </div>
+            <div class="col-5"><img src="../imgs/dahlia.jpg" alt="" class="imgmodal" data-target-modal="targetimg_01">
+                <div data-modalname="targetimg_01" width="70%"><img class="img-full" src="../imgs/dahlia.jpg" alt=""></div>
+            </div>
+            <div class="col-7"><img src="../imgs/frog.jpg" alt="" class="imgmodal" data-target-modal="targetimg_02">
+                <div data-modalname="targetimg_02" width="70%"><img class="img-full" src="../imgs/frog.jpg" alt=""></div>
+            </div>
+            <div class="col-4">
+                <a class="imgmodal" data-target-modal="targetimgt_01">Click to see it detail</a>
+                <div data-modalname="targetimgt_01" width="40%">
+                    <div class="row" style="padding: 30px;">
+                        <div class="col-12">
+<h3>It a modal view content</h3>
+<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolore sit quasi voluptatum molestias? Quidem
+    consectetur autem nostrum optio asperiores, officia repellendus? Obcaecati non in, facere vero quas est mollitia!
+</div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-4"><img src="../imgs/img_10.jpg" alt="" class="imgmodal" data-target-modal="targetimg_03">
+                <div data-modalname="targetimg_03" width="70%"><div class="card"><img class="img-full" src="../imgs/img_10.jpg" alt=""></div></div>
+            </div>
+            <div class="col-5">
+                <img src="../imgs/hipster_bg.jpg" alt="" class="imgmodal" data-target-modal="targetimg_04">
+                <div data-modalname="targetimg_04" width="70%"><img class="img-full" src="../imgs/hipster_bg.jpg" alt=""></div>
+            </div>
+            <div class="col-3"><img src="../imgs/img_5.jpg" alt="" class="imgmodal" data-target-modal="targetimg_05">
+                <div data-modalname="targetimg_05" width="70%"><img class="img-full" src="../imgs/img_5.jpg" alt=""></div>
+            </div>
+            <div class="col-7">
+                <img src="../imgs/puffin.jpg" alt="" class="imgmodal" data-target-modal="targetimg_06">
+                <div data-modalname="targetimg_06" width="70%"><img class="img-full" src="../imgs/puffin.jpg" alt=""></div>
+            </div>
+            <div class="col-4"><img src="../imgs/img_6.jpg" alt="" class="imgmodal" data-target-modal="targetimg_07">
+                <div data-modalname="targetimg_07" width="70%"><img class="img-full" src="../imgs/img_6.jpg" alt=""></div>
+            </div>
+            <div class="col-7">
+                <img src="../imgs/img_2.jpg" alt="" class="imgmodal" data-target-modal="targetimg_08">
+                <div data-modalname="targetimg_08" width="70%"><img class="img-full" src="../imgs/img_2.jpg" alt=""></div>
+            </div>
+            <div class="col-4"><img src="../imgs/img_1.jpg" alt="" class="imgmodal" data-target-modal="targetimg_09">
+                <div data-modalname="targetimg_09" width="70%"><img class="img-full" src="../imgs/img_1.jpg" alt=""></div>
+            </div>
+            <div class="col-4">
+                <img src="../imgs/img_11.jpg" alt="" class="imgmodal" data-target-modal="targetimg_10">
+                <div data-modalname="targetimg_10" width="70%"><img class="img-full" src="../imgs/img_11.jpg" alt=""></div>
+            </div>
+            <div class="col-4"><img src="../imgs/img_2.jpg" alt="" class="imgmodal" data-target-modal="targetimg_11">
+                <div data-modalname="targetimg_11" width="70%"><img class="img-full" src="../imgs/img_2.jpg" alt=""></div>
+            </div>
+            <div class="col-3">
+                <img src="../imgs/img_13.jpg" alt="" class="imgmodal" data-target-modal="targetimg_12">
+                <div data-modalname="targetimg_12" width="70%"><img class="img-full" src="../imgs/img_13.jpg" alt=""></div>
+            </div>
+            <div class="col-4"><img src="../imgs/img_4.jpg" alt="" class="imgmodal" data-target-modal="targetimg_13">
+                <div data-modalname="targetimg_13" width="70%"><img class="img-full" src="../imgs/img_4.jpg" alt=""></div>
+            </div>
+            <div class="col-3">
+                <img src="../imgs/img_14.jpg" alt="" class="imgmodal" data-target-modal="targetimg_14">
+                <div data-modalname="targetimg_14" width="70%"><img class="img-full" src="../imgs/img_14.jpg" alt=""></div>
+            </div>
+            <div class="col-6"><img src="../imgs/img_7.jpg" alt="" class="imgmodal" data-target-modal="targetimg_15">
+                <div data-modalname="targetimg_15" width="70%"><img class="img-full" src="../imgs/img_7.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.imgmodal').modalloader();
+        });
+    </script>
+</body>
+</html>

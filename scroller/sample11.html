@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroller test</title>
+    <link rel="stylesheet" href="../dist/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<style type="text/css">
+    .cross {
+      background: red;
+      height: 100px;
+      position: relative;
+      width: 20px;
+    }
+    .cross:after {
+      background: red;
+      content: "";
+      height: 20px;
+      left: -40px;
+      position: absolute;
+      top: 40px;
+      width: 100px;
+    }
+    .test { width: fit-content; background: orange; }
+
+    .bombexp { position: absolute; left: 100px; top: 400px; z-index: 100; color: red; transform-origin: center center; }
+    .bombexp span { position: absolute; left: 0; top: 0; transform-origin: center center; }
+</style>
+<body>
+    <div class="container-fluid" id="body">
+        <div class="row" style="min-height: fit-content;">
+            <div class="col-12">
+                <ul class="nav topmenu">
+                    <li class="nav-item"><span class="nav-link" data-hash="#item01">item 01</span></li>
+                    <li class="nav-item"><span class="nav-link" data-hash="#item02">item 02</span></li>
+                    <li class="nav-item"><span class="nav-link" data-hash="#item03">item 03</span></li>
+                    <li class="nav-item"><span class="nav-link" data-hash="#item04">item 04</span></li>
+                    <li class="nav-item"><span class="nav-link" data-hash="#item05">item 05</span></li>
+                    <li class="nav-item"><span class="nav-link" data-hash="#item06">item 06</span></li>
+                    <li class="nav-item"><span class="nav-link" data-hash="#item07">item 07</span></li>
+                    <li class="nav-item"><span class="nav-link" data-hash="#item08">item 08</span></li>
+                </ul><br><br>
+                <h1>This is a sample page.</h1>
+            </div>
+            <div class="col-6">
+                <div>
+                    <div class="cross"></div>
+                    <span style='font-size:50px;'>&#9639;</span>39
+                    <span style='font-size:50px;'>&#9653;</span>53
+                    <span style='font-size:50px;'>&#9650;</span>50
+                    <span style='font-size:50px;'>&#9678;</span>78
+                    <span style='font-size:50px;'>&#9677;</span>77
+                    <span style='font-size:50px;'>&#9674;</span>74
+                    <span style='font-size:50px;'>&#9670;</span>70
+                    <span style='font-size:50px;'>&#9671;</span>71
+                    <span style='font-size:50px;'>&#9672;</span>72
+                    <span style='font-size:50px;'>&#9673;</span>73
+                    <span style='font-size:50px;'>&#9706;</span>06
+                    <span style='font-size:50px;'>&#9635;</span>35
+                    <span style='font-size:50px;'>&#9641;</span>41
+                    <span style='font-size:50px;'>&#9646;</span>46
+                    <span style='font-size:50px;'>&#9647;</span>47
+                    <span style='font-size:50px;'>&#9648;</span>48
+                    <span style='font-size:50px;'>&#9676;</span>76
+                    <span style='font-size:50px;'>&#9675;</span>75
+                    <span style='font-size:50px;'>&#9679;</span>79
+                    <span style='font-size:50px;'>&#9692;</span>92
+                    <span style='font-size:50px;'>&#9693;</span>93
+                    <span style='font-size:50px;'>&#9694;</span>94
+                    <span style='font-size:50px;'>&#9695;</span>95
+                </div>
+            </div>  
+            <div class="col-6">
+                <canvas id="myCanvas" width="100%" height="250" style="border:1px solid #c3c3c3;"></canvas>
+            </div>
+            <div class="col-6">
+                <div class="test">Object</div>
+                <canvas class="fireworks"></canvas>
+            </div>
+            <div class="col-6">
+                <div class="btn btn-primary" id="SomeElementYouWantToAnimate">Button </div>
+                <div class="btn btn-custom" onClick=''>Button</div>
+            </div>
+            <div class="col-6"><hr class="box bx1"> 
+                <hr class="box bx2"> 
+                <hr class="box bx3"> 
+                <hr class="box bx4">
+            </div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div id="item01"><h1>Item section 01</h1></div>
+                <div class="row justify-content-center">                  
+                    <div class="col-5"><div id="proimg"><div><img src="../imgs/dahlia.jpg" alt=""></div></div></div>
+                    <div class="col-7"><div id="proimg1"><div><img src="../imgs/frog.jpg" alt=""></div></div></div>  
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="item02"><h1>Item section 02</h1></div>
+                <div class="row justify-content-center">
+                    <div class="col-4"><div id="proimg2"><div><img src="../imgs/img_10.jpg" alt=""></div></div></div>
+                    <div class="col-5"><div id="proimg3"><div><img src="../imgs/hipster_bg.jpg" alt=""></div></div></div>
+                    <div class="col-3"><div id="proimg4"><div><img src="../imgs/img_5.jpg" alt=""></div></div></div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="item03"><h1>Item section 03</h1></div>
+                <div class="row justify-content-center">
+                    <div class="col-7"><div id="proimg5"><div><img src="../imgs/puffin.jpg" alt=""></div></div></div>
+                    <div class="col-4"><div id="proimg6"><div><img src="../imgs/img_6.jpg" alt=""></div></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="min-height: fit-content;">
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+            <div class="col-12">
+                <div>All the right reserved by @bdmeditech.</div>
+            </div>
+            <div class="col-12"><hr style="margin-bottom: 50px; border:none;"></div>
+        </div>
+    </div>
+    <script src="../dist/anime.min.js"></script>
+    <script src="../dist/jquery-3.5.0.min.js"></script>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        canvas.width = 400; // get parent width then put it.
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = randColor();
+        ctx.fillRect(0,0,250,175);
+
+        ctx.moveTo(0, 0);
+        ctx.lineTo(150, 150);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(80, 70, 50, 0, 2*Math.PI);
+        ctx.stroke();
+
+        ctx.fillStyle = "#DDDDDD";
+        ctx.font = "20px Arial";
+        ctx.fillText("I am the Cube", 10, 75);
+
+        // Creating gradient
+        var grad = ctx.createLinearGradient(200, 100, 260, 80);
+        grad.addColorStop(0, randColor());
+        grad.addColorStop(1, randColor());
+        // Filling with gradient
+        ctx.fillStyle = grad;
+        ctx.fillRect(210, 110, 130, 130);
+
+
+        // Create gradient
+        var grad = ctx.createRadialGradient(80, 45, 5,  80, 50, 90);
+        grad.addColorStop(0, randColor());
+        grad.addColorStop(1, randColor());
+        // Fill with gradient
+        ctx.fillStyle = grad;
+        ctx.fillRect(10, 80, 130, 130);
+
+
+        function randColor() {
+          var color = '#';
+          for (var i = 0; i < 6; i++) 
+            color += Math.floor(Math.random() * 16).toString(16);
+          return color;
+        }
+    </script>
+</body>
+</html>

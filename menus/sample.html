@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/custommenu.js"></script>
+    <link rel="stylesheet" href="./css/custommenu.css">
+    <link rel="stylesheet" href="./js/myscroler.js">
+    <style>img { width: 100%; margin: 20px auto; }</style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">            
+                <nav class="topmenu">
+                    <ul class="nav">            
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">home</a>            
+                            <!-- Level 2 menu starts -->
+                            <div class='drop-menu'>
+                                <ul>            
+                                    <li class='nav-item'> <a class="nav-link" href="#">Home page</a></li>
+                                    <li class='nav-item'> <a class="nav-link" href="#">Blog page</a></li>
+                                    <li class='nav-item'> <a class="nav-link" href="#">Gallery</a></li>
+                                </ul>
+                            </div>
+                            <!-- Level 2 menu ends -->
+            
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Page</a>
+            
+                            <!-- Level 2 menu starts -->
+                            <div class='col-views drop-menu'>
+                                <ul>
+            
+                                    <li class='nav-item'>
+                                        <h5>column 01</h5>
+            
+                                        <!-- level 3 menu Start -->
+                                        <div>
+                                            <ul>
+            
+                                                <li class="nav-item expand"><a class="nav-link" href="#">shop grid left sidebar</a></li>
+                                                <li class="nav-item expand"><a class="nav-link" href="#">shop grid right sidebar</a>            
+                                                    <!-- Lstert of level 4 menu -->
+                                                    <div class="expand-menu">
+                                                        <ul>
+                                                            <li class="nav-item"><a class="nav-link" href="#">shop grid right
+                                                                    sidebar</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">shop list left
+                                                                    sidebar</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- End of level 4 menu -->
+            
+                                                </li>
+                                                <li class="nav-item expand"><a class="nav-link" href="#">shop list left sidebar</a></li>            
+                                            </ul>
+                                        </div>
+                                        <!-- Level 3 menu ends -->            
+                                    </li>
+                                    <li class='nav-item'>
+                                        <h5>column 02</h5>            
+                                        <!-- level 3 menu Start -->
+                                        <div>
+                                            <ul>            
+                                                <li class="nav-item expand"><a class="nav-link" href="#">product details</a></li>
+                                                <li class="nav-item expand"><a class="nav-link" href="#">product details
+                                                        affiliate</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- Level 3 menu ends -->
+            
+                                    </li>
+                                    <li class='nav-item'>
+                                        <h5>column 03</h5>            
+                                        <!-- level 3 menu Start -->
+                                        <div>
+                                            <ul>            
+                                                <li class="nav-item expand"><a class="nav-link" href="#">cart</a></li>
+                                                <li class="nav-item expand"><a class="nav-link" href="#">checkout</a></li>            
+                                            </ul>
+                                        </div>
+                                        <!-- Level 3 menu ends -->            
+                                    </li>
+                                    <li class='nav-item'>
+                                        <h5>column 04</h5>            
+                                        <!-- level 3 menu Start -->
+                                        <div>
+                                            <ul>            
+                                                <li class="nav-item expand"><a class="nav-link" href="#">my-account</a></li>
+                                                <li class="nav-item expand"><a class="nav-link" href="#">login-register</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- Level 3 menu ends -->
+            
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Level 2 menu ends -->
+            
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">shop</a>
+            
+                            <!-- Level 2 menu starts -->
+                            <div class='drop-menu'>
+                                <ul>            
+                                    <li class='nav-item expand'> <a class="nav-link" href="#">shop grid layout</a>
+                                        <!-- level 3 menu Start -->
+                                        <div class='expand-menu'>
+                                            <ul>            
+                                                <li class="nav-item expand"><a class="nav-link" href="#">shop grid left sidebar</a></li>
+                                                <li class="nav-item expand"><a class="nav-link" href="#">shop grid right sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- Level 3 menu ends -->            
+                                    </li>
+                                    <li class='nav-item expand'> <a class="nav-link" href="#">shop list layout</a>
+                                        <!-- level 3 menu Start -->
+                                        <div class='expand-menu'>
+                                            <ul>            
+                                                <li class="nav-item expand"><a class="nav-link" href="#">shop grid left sidebar</a></li>
+                                                <li class="nav-item expand"><a class="nav-link" href="#">shop grid right sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- Level 3 menu ends -->
+            
+                                    </li>
+                                    <li class='nav-item expand'> <a class="nav-link" href="#">products details</a>
+                                        <!-- level 3 menu Start -->
+                                        <div class='expand-menu'>
+                                            <ul>
+                                                <li class="nav-item expand"><a class="nav-link" href="#">shop grid full 3 col</a>            
+                                                    <!-- Lstert of level 4 menu -->
+                                                    <div class="expand-menu">
+                                                        <ul>
+                                                            <li class="nav-item"><a class="nav-link" href="#">shop grid left
+                                                                    sidebar</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="#">shop grid right
+                                                                    sidebar</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- End of level 4 menu -->            
+                                                </li>
+                                                <li class="nav-item expand"><a class="nav-link" href="#">shop grid full 4 col</a></li>            
+                                            </ul>
+                                        </div>
+                                        <!-- Level 3 menu ends -->            
+                                    </li>
+                                    <li class='nav-item'> <a class="nav-link" href="#">product details group</a></li>
+                                </ul>
+                            </div>
+                            <!-- Level 2 menu ends -->
+            
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">contact us</a></li>            
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-12">
+                <h1>This is a sample page.</h1>
+            </div>
+            <div class="col-5"><img src="../imgs/dahlia.jpg" alt=""></div>
+            <div class="col-4"><img src="../imgs/img_6.jpg" alt=""></div>
+            <div class="col-7"><img src="../imgs/frog.jpg" alt=""></div>
+            <div class="col-4"><img src="../imgs/img_10.jpg" alt=""></div>
+            <div class="col-3"><img src="../imgs/img_5.jpg" alt=""></div>
+            <div class="col-5"><img src="../imgs/hipster_bg.jpg" alt=""></div>
+            <div class="col-7"><img src="../imgs/img_2.jpg" alt=""></div>
+            <div class="col-4"><img src="../imgs/img_1.jpg" alt=""></div>
+            <div class="col-4"><img src="../imgs/img_11.jpg" alt=""></div>
+            <div class="col-4"><img src="../imgs/img_2.jpg" alt=""></div>
+            <div class="col-3"><img src="../imgs/img_13.jpg" alt=""></div>
+            <div class="col-4"><img src="../imgs/img_4.jpg" alt=""></div>
+            <div class="col-3"><img src="../imgs/img_14.jpg" alt=""></div>
+            <div class="col-6"><img src="../imgs/img_7.jpg" alt=""></div>
+            <div class="col-5"><img src="../imgs/img_8.jpg" alt=""></div>
+            <div class="col-3"><img src="../imgs/puffin.jpg" alt=""></div>
+            <div class="col-3"><img src="../imgs/img_9.jpg" alt=""></div>
+            <div class="col-5"><img src="../imgs/test6.jpg" alt=""></div>
+            <div class="col-7"><img src="../imgs/test5.jpg" alt=""></div>
+            <div class="col-4"><img src="../imgs/toucan.jpg" alt=""></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+       $(document).ready(function(){
+        $(window).scroll(function() {
+          console.log('Scrolled to ' + $(this).scrollTop());
+        });    
+       });    
+    </script>
+</body>
+</html>

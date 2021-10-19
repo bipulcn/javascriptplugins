@@ -1,0 +1,16 @@
+img { width: 100%; margin: 20px auto; }
+.animes { background: orange; width: fit-content; }
+.animate { animation: bounce 2s infinite ease-in-out; }
+
+[class*='anime_'] { background: orange; width: 80px; min-height: 60px; padding: 10px; font-size: 0.75rem; text-align: center; border-radius: 5px; box-shadow: 0 0 10px grey; }
+
+.simple { position: relative; display: inline-block;vertical-align: text-top;overflow: hidden; }
+.simple>span { position: relative; display: block; width: fit-content;white-space: nowrap; line-height: initial; }
+
+.typeit { width: fit-content; display: inline-block; padding: 0 2px; white-space: nowrap; overflow: hidden; vertical-align: bottom; }
+.typeit:after {content: " ";position: relative;width: 10px;border-bottom: 4px solid gray;animation: blink-caret .5s step-end infinite;display: inline-block;}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: gray; }
+}

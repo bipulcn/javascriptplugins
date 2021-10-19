@@ -1,0 +1,6 @@
+.holdercloser { background: rgba(0, 0, 0, 0.5); padding: 30px 0px; position: fixed; width: 100vw; height: 100vh; top: 0px; overflow: auto; opacity: 1; }
+.disableClick { background: white; margin: 0 auto;box-shadow:0px 0px 25px -4px #000000AA !important; border-radius: 5px; position: relative; word-wrap: break-word; background-clip: border-box; }
+.modalcloser { top: -15px;position: absolute;padding: 0px 9px 2px;box-shadow: 0 0 5px 0px #000000AA; }
+.modalprev, .modalnext { background: #000000AA; color: white; padding: 10px; display: inline; position: absolute; top: 45%; }
+.modalprev { left: -35px; transform: rotate(180deg); }
+.modalnext { right: -35px; }

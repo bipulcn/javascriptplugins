@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <script src="../dist/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shortanim.css">
+    <link rel="stylesheet" href="./js/custom.js">
+    <style>img { width: 100%; margin: 20px auto; }</style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+        	<div class="col-4"><div class="obj01"></div></div>
+        	<div class="col-4"><div class="obj02"></div></div>
+        	<div class="col-4"><div class="obj03"></div></div>
+        	<div class="col-4"><div class="obj04"></div></div>
+        	<div class="col-4"><div class="obj05"></div></div>
+        	<div class="col-4"><div class="obj06"></div></div>
+        	<div class="col-4"><div class="obj07"></div></div>
+        	<div class="col-4"><div class="obj08"></div></div>
+        	<div class="col-4"><div class="obj09"></div></div>
+        	<div class="col-4"><div class="obj10"></div></div>
+        	<div class="col-4"><div class="obj11"></div></div>
+        	<div class="col-4">
+        		<div class="boxholder" style="width: 50px">
+            		<div class="origin" style="width: 25px; height: 25px; transform-origin: top left"></div>
+					<div class="origin" style="width: 25px; height: 25px; transform-origin: top right"></div>
+					<div class="origin" style="width: 25px; height: 25px; transform-origin: bottom left"></div>
+					<div class="origin" style="width: 25px; height: 25px; transform-origin: bottom right"></div>
+				</div>
+			</div>
+        	<div class="col-4"><div class="obj13"></div></div>
+        	<div class="col-4"><div class="obj14"></div></div>
+        	<div class="col-4"><div class="obj15"></div></div>
+            <div class="col-12">
+            	<div class="boxholder">
+            		<div class="origin" style="transform-origin: top left"></div>
+					<div class="origin" style="transform-origin: top center"></div>
+					<div class="origin" style="transform-origin: top right"></div>
+
+					<div class="origin" style="transform-origin: center left"></div>
+					<div class="origin" style="transform-origin: center center"></div>
+					<div class="origin" style="transform-origin: center right"></div>
+
+					<div class="origin" style="transform-origin: bottom left"></div>
+					<div class="origin" style="transform-origin: bottom center"></div>
+					<div class="origin" style="transform-origin: bottom right"></div>
+					</div>
+				</div>
+            <div class="col-12">
+                <h1>This is a sample page For svg Background.</h1>
+            </div>
+            <div class="col-8">
+      <div class="bgObj testSvg"> This is a test svg animation with animated background
+        <svg width="500" height="350">
+          <circle id="orange-circle" r="20" cx="150" cy="50" fill="orange" />
+          <circle id="blue-rectangle" r="15" cx="50" cy="50" fill="#0099cc"/>
+
+          <animate
+                   xlink:href="#orange-circle"
+                   attributeName="cx"
+                   from="50"
+                   to="250"
+                   dur="50s"
+                   begin="0s"
+                   repeatCount="1"
+                   fill="freeze"
+                   id="circ-anim"/>
+
+          <animate
+                   xlink:href="#blue-rectangle"
+                   attributeName="cx"
+                   from="50"
+                   to="300"
+                   dur="5s"
+                   begin="0s"
+                   repeatCount="2"
+                   fill="freeze"
+                   id="rect-anim"/>
+
+        </svg>
+      </div></div>
+            <div class="col-5"><div class="disImg"><img src="../imgs/img_1.jpg"></div></div>
+            <div class="col-4"><img src="../imgs/img_6.jpg" alt=""></div>
+            <div class="col-7"><img src="../imgs/frog.jpg" alt=""></div>
+            <div class="col-4"><img src="../imgs/img_10.jpg" alt=""></div>
+            <div class="col-3"><img src="../imgs/img_5.jpg" alt=""></div>
+            <div class="col-5"><img src="../imgs/hipster_bg.jpg" alt=""></div>
+            <div class="col-7"><img src="../imgs/img_2.jpg" alt=""></div>
+            <div class="col-4"><img src="../imgs/img_1.jpg" alt=""></div>
+            <div class="col-4"><img src="../imgs/img_11.jpg" alt=""></div>
+            <div class="col-4"><img src="../imgs/img_2.jpg" alt=""></div>
+            <div class="col-3"><img src="../imgs/img_13.jpg" alt=""></div>
+            <div class="col-4"><img src="../imgs/img_4.jpg" alt=""></div>
+            <div class="col-3"><img src="../imgs/img_14.jpg" alt=""></div>
+            <div class="col-6"><img src="../imgs/img_7.jpg" alt=""></div>
+            <div class="col-5"><img src="../imgs/img_8.jpg" alt=""></div>
+            <div class="col-3"><img src="../imgs/puffin.jpg" alt=""></div>
+            <div class="col-3"><img src="../imgs/img_9.jpg" alt=""></div>
+            <div class="col-5"><img src="../imgs/test6.jpg" alt=""></div>
+            <div class="col-7"><img src="../imgs/test5.jpg" alt=""></div>
+            <div class="col-4"><img src="../imgs/toucan.jpg" alt=""></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+       $(document).ready(function(){
+        $(window).scroll(function() {
+          console.log('Scrolled to ' + $(this).scrollTop());
+        });    
+       });    
+    </script>
+</body>
+</html>

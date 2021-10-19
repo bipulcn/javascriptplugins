@@ -1,0 +1,10 @@
+.nav li { list-style: none; padding: 0; margin: 0;  }
+.nav ul { margin: 0; padding: 0; background: rgba(255, 255, 255, 0.75); }
+.nav .nav-link { min-width: max-content; background: rgba(255, 255, 255, 0.5); color: rgba(0, 0, 0, 0.75); }
+.nav .nav-link:hover { background: rgba(80, 0, 152, 0.5); color: orange; }
+
+.mnuhide { display: none !important; }
+.mnushow { display: block; }
+.topmenu { z-index: 100; }
+.drop-menu, .expand-menu { position: absolute; z-index: 100; }
+.expand-menu { left: 100%; margin-top: -40px; }

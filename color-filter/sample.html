@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/colorfilter.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12"><h1>This is a sample page.</h1></div>
+            <div class="col-5"><img src="../imgs/dahlia.jpg" alt=""></div>
+            <div class="col-6"><img src="../imgs/frog.jpg" alt=""></div>
+            <div class="col-3"><img src="../imgs/img_10.jpg" alt="" class="hue1">
+            <img src="../imgs/puffin.jpg" alt="" class="hue1"></div>
+            <div class="col-3"><img src="../imgs/img_10.jpg" alt="" class="hue2">
+            <img src="../imgs/puffin.jpg" alt="" class="hue2"></div>
+            <div class="col-3"><img src="../imgs/img_10.jpg" alt="" class="hue3">
+            <img src="../imgs/puffin.jpg" alt="" class="hue3"></div>
+            <div class="col-3"><img src="../imgs/img_10.jpg" alt="" class="hue4">
+            <img src="../imgs/puffin.jpg" alt="" class="hue4"></div>
+            <div class="col-3"><img src="../imgs/img_10.jpg" alt="" class="hue5">
+            <img src="../imgs/puffin.jpg" alt="" class="hue5"></div>
+            <div class="col-3"><img src="../imgs/img_10.jpg" alt="" class="hue6">
+            <img src="../imgs/puffin.jpg" alt="" class="hue6"></div>
+            <div class="col-3"><img src="../imgs/img_10.jpg" alt="" class="hue7">
+            <img src="../imgs/puffin.jpg" alt="" class="hue7"></div>
+            <div class="col-3"><img src="../imgs/img_10.jpg" alt="" class="hue8">
+            <img src="../imgs/puffin.jpg" alt="" class="hue8"></div>
+            <div class="col-3"><img src="../imgs/img_10.jpg" alt="" class="hue9">
+            <img src="../imgs/puffin.jpg" alt="" class="hue9"></div>
+            <div class="col-3"><img src="../imgs/img_10.jpg" alt="" class="hue10">
+            <img src="../imgs/puffin.jpg" alt="" class="hue10"></div>
+            <div class="col-6"><img src="../imgs/test6.jpg" class="over01" alt="">
+                <img src="../imgs/test6.jpg" alt=""></div>
+            <div class="col-6"><img src="../imgs/test5.jpg" class="over01" alt="">
+                <img src="../imgs/test5.jpg" alt=""></div>
+            <div class="col-6"><img src="../imgs/toucan.jpg" class="over01" alt="">
+                <img src="../imgs/toucan.jpg" alt=""></div>
+        </div>
+    </div>
+    <script>
+    bubbly({ colorStart: '#FED', colorStop: '#DEF', compose: 'source-over',
+        bubbleFunc: () => `hsla(${Math.random() * 50}, 100%, 50%, .3)`});
+    </script>
+</body>
+</html>

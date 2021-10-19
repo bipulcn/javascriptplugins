@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/bootstrap.min.css" >
+    <script src="../dist/jquery-3.5.0.min.js" ></script>
+    <script type="text/javascript" src="./js/anime.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h1>This is a sample page.</h1>
+            </div>
+            <div class="col-7 parent">
+                <img src="../imgs/dahlia.jpg" class="wave_image" alt="">     
+            </div>
+            <div class="col-5">
+                <img src="../imgs/img_6.jpg" class="wave_image" alt="">
+            </div>
+            <div class="col-5">
+                <img src="../imgs/img_8.jpg" class="wave_image" alt="">
+            </div>
+            <div class="col-5">
+                <img src="../imgs/img_4.jpg" class="wave_image" alt="">
+            </div>
+            <div class="col-5">
+                <img src="../imgs/img_5.jpg" class="wave_image" alt="">
+            </div>
+            <div class="col-5">
+                <img src="../imgs/img_7.jpg" class="wave_image" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        
+    </script>
+    <style type="text/css">
+        img { width: 100%; }
+        /*.parent { background: url("../imgs/dahlia.jpg"); padding: 0; background-size: 100%  }*/
+        .tile_holder { position: absolute; top: 0; left: 15px; width: 100px; height: 150px; overflow: hidden; }
+    </style>
+    <script type="text/javascript">
+        
+      function addEventListener(){
+        document.addEventListener("touchstart", listenevent);
+        document.addEventListener("mousedown", listenevent);
+        document.addEventListener("click", listenevent);
+      }
+      addEventListener();
+      document.onreadystatechange = () => {
+        if (document.readyState === 'complete') {
+            let objs = document.querySelectorAll('.wave_image');
+            objs.forEach((el, k)=>{
+                createBoxes(el);
+            });
+        }
+      };
+      let grd, counter=0, unit=20;
+      function listenevent(evt) {
+        let tar = evt.target;
+        if(tar.tagName=='IMG') {
+            createBoxes(tar);
+        }
+        let ind = tar.getAttribute('data-index');
+        let cls = tar.className;
+        if(cls == tar.parentNode.getAttribute('data-class'))
+        anime({
+            targets: '.tile_holder .'+cls,
+            keyframes: [
+              {
+                translateX: anime.stagger('-1px', {grid: grd, from: ind, axis: 'x'}),
+                translateY: anime.stagger('-1px', {grid: grd, from: ind, axis: 'y'}),
+                scale: anime.stagger([1, 1.2], {grid: grd, from: ind }),
+                duration: 100
+              }, {
+                translateX: anime.stagger('1px', {grid: grd, from: ind, axis: 'x'}),
+                translateY: anime.stagger('1px', {grid: grd, from: ind, axis: 'y'}),
+                scale: anime.stagger([1.2, 1], {grid: grd, from: ind }),
+                duration: 225
+              }, {
+                translateX: 0,
+                translateY: 0,
+                scale: 1,
+                duration: 1200,
+              }
+            ],
+            delay: anime.stagger(120, {grid: grd, from: ind})
+        });
+      }
+
+      function createBoxes(obj) {
+        let src = obj.src, hi = obj.height, wi = obj.width, px = obj.x, py = obj.y, nhi = obj.naturalHeight, nwi = obj.naturalWidth;
+        grd = [unit, unit];
+        let ux = wi/grd[0], uy = hi/grd[1];
+        let stu = document.createElement('div');
+        stu.setAttribute('data-class', 'box'+counter);
+        stu.classList.add('tile_holder');
+        let ex = obj.parentNode.querySelector('.tile_holder');
+        // console.log(ex);
+        if(ex == null && !obj.className.includes('box')) {
+            for (var i = 0; i < grd[0]*grd[1]; i++) {
+                let el = document.createElement('div');
+                el.classList.add('box'+counter);
+                el.setAttribute('data-index', i);
+                stu.appendChild(el);
+                el.style.position = 'absolute';
+                el.style.left = ((i%grd[0])*ux)+'px';
+                el.style.top = (Math.floor(i/grd[0])*uy)+'px';
+                el.style.width = ux+'px';
+                el.style.height = uy+'px';
+                el.style.opacity = 0.9;
+                el.style.borderRadius = '5px';
+                el.style.background = "url('"+src+"') no-repeat";
+                el.style.backgroundSize = (grd[0]*100)+'%';
+                el.style.backgroundPosition = (100/(grd[0]-1))*(i%grd[0])+"% "+(100/(grd[0]-1))*(Math.floor(i/grd[0]))+"%";
+              }
+            obj.parentNode.insertBefore(stu, obj.nextSibling);
+        }
+        stu.style.width = wi+'px';
+        stu.style.height = hi+'px';
+        counter++;
+      }
+      function reportWindowSize() {
+        let objs = document.querySelectorAll('.wave_image');
+        objs.forEach((el, k)=>{
+            let wi = el.width, hi = el.height;
+            let ux = wi/grd[0], uy = hi/grd[1];
+            let tl = el.parentNode.querySelector('.tile_holder');
+            tl.childNodes.forEach((v, k)=>{
+                v.style.left = ((k%grd[0])*ux)+'px';
+                v.style.top = (Math.floor(k/grd[0])*uy)+'px';
+                v.style.width = ux+'px';
+                v.style.height = uy+'px';
+            });
+        });
+      }
+      window.onresize = reportWindowSize;
+      
+    </script>
+</body>
+</html>

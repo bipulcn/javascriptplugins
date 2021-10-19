@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>This is a tile page</title>
+    <link rel="stylesheet" href="../dist/bootstrap.min.css" >
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<h3>This is a sample image tyle design</h3>
+				<div>We are going to make a system so that any shape will work with single image. We are going to define a image with a class name which will set the property as tile. Then we are going to set some property of the image. </div>
+			</div>
+			<div class="clear"></div>
+			<div class="col-4">
+				<img class="" src="../imgs/img_1.jpg">
+			</div>
+			<div class="col-4 shapepar01">
+				<div class="shape01 bx01"></div>
+				<div class="shape01 bx02"></div>
+				<div class="shape01 bx03"></div>
+				<div class="shape01 bx04"></div>
+			</div>
+			<div class="col-4 shapepar02">
+				<div class="shape02 bx11"></div>
+				<div class="shape02 bx12"></div>
+				<div class="shape02 bx13"></div>
+				<div class="shape02 bx14"></div>
+				<div class="shape02 bx15"></div>
+				<div class="shape02 bx16"></div>
+				<div class="shape02 bx17"></div>
+				<div class="shape02 bx18"></div>
+				<div class="shape02 bx19"></div>
+				<div class="shape02 bx10"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="col-4">
+				<img class="tiles-maker" src="../imgs/img_1.jpg">
+			</div>
+			<div class="col-4">
+				<img class="tileclip" src="../imgs/img_1.jpg">
+			</div>
+			<div class="col-4">
+				<img class="tileclip" src="../imgs/img_2.jpg">
+			</div>
+			<div class="clear"></div>
+			<div class="col-12">
+				<svg width="300" height="250" id='svg-object'>
+				  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" id="target" />
+				</svg>
+				<input type="range" min="1" max="60" value="20" oninput="moveSlider(this, 'x')"/>
+				<input type="range" min="1" max="40" value="10" oninput="moveSlider(this, 'y')"/>
+			</div>
+		</div>
+	</div>
+<svg class="svg-defs" id='svgcliper'>
+	<defs>
+        <clipPath id="clip1">
+          <!-- <polygon points="130 50, 160 0, 220 0, 250 50, 220 100, 150 100" ></polygon> -->
+          <!-- <polygon points="0 50, 30 0, 90 0, 120 50, 90 100, 30 100"></polygon> -->
+        </clipPath>
+	    <clipPath id="clipping-with-text">
+	      <polygon points="98 153 38 185 49 118 1 70 68 61 98 1 128 61 195 70 147 118 158 185"/>
+	      <polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:1" />
+	      <circle cx="50" cy="250" r="40" stroke="black" stroke-width="3" fill="red" />
+	      <polygon points="339,243 296,268 252,243 252,193 296,168 339,193" />
+	      <polygon points="49 39,240 73,267 253,74 224"></polygon>
+	    </clipPath>
+	</defs>
+</svg>
+	<link rel="stylesheet" type="text/css" href="./css/tileimg.css">
+	<script type="text/javascript" src="./js/tileimg.js"></script>
+	<script type="text/javascript">
+		// window.addEventListener("load", function() {
+		    
+		// });
+		document.onreadystatechange = () => {
+		  console.log(document.readyState);
+		  if (document.readyState === 'complete') {
+		    var sv = document.getElementById('svg-object');
+		    
+			let cir = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+			cir.setAttributeNS(null, 'cx', 50);
+			cir.setAttributeNS(null, 'cy', 25);
+			cir.setAttributeNS(null, 'r', 15);
+			cir.setAttributeNS(null, 'stroke', 'skyblue');
+			cir.setAttributeNS(null, 'stroke-width', 4);
+			sv.appendChild(cir);
+		  }
+		};
+		var moveSlider = function(slider, direction) {
+		    var value = slider.value;
+		    console.log(value);
+		    var circle = document.getElementById("target");
+		    var coord = "c" + direction;
+		    circle.setAttributeNS(null, coord, value * 5);
+		}
+	</script>
+	<style type="text/css">
+		.tiles-maker { clip-path: url(#clipping-with-text); }
+		/*.tileclip { clip-path: url(#clipping); }*/
+	</style>
+</body>
+</html>

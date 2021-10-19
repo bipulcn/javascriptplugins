@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/fitwidth.js"></script>
+    <style>
+        body { font-size: 14px; }
+    img { width: 100%; margin: 20px auto; }
+    /* .fitme { text-align: justify; } */
+    .readMore { text-align: justify; }
+    </style>
+</head>
+<body>
+  <aside id="controller"></aside>
+  <main id="my-scrollbar" data-scrollbar>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h1>This is a sample page.</h1>
+            </div>
+            <div class="col-5"><img src="../imgs/dahlia.jpg" alt=""></div>
+            <div class="col-4"><img src="../imgs/img_10.jpg" alt=""></div>
+            <div class="col-3">
+                <img src="../imgs/img_13.jpg" alt=""></div>
+            <div class="col-12">
+                <div style="max-width: 600px; display: block; margin: 30px auto;">
+                    <div class="fitme">Good to see you</div>
+                    <div class="fitme">Lorem ipsum dolor SIT AMET</div>
+                    <div class="fitme">consectetur adipisicing</div>
+                    <div class="fitme" data-line=10>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis necessitatibus esse sit eligendi excepturi debitis delectus, natus iste ratione illo impedit nesciunt aliquid quia dignissimos iusto ducimus pariatur qui quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eius non, distinctio sunt alias odio illum repudiandae dolor a quibusdam, recusandae eligendi ad mollitia iure! Soluta sed repudiandae neque cum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque magni mollitia amet obcaecati enim eveniet, cumque eum quod necessitatibus praesentium repellat suscipit, eos reiciendis. Exercitationem, quos fugit! Hic, modi nihil.</div>
+                    <div class="fitme">hic iure autem eveniet nisi?</div>
+                </div>
+            </div>
+            <div class="col-4"><img src="../imgs/img_4.jpg" alt=""></div>
+            <div class="col-7"><img src="../imgs/test5.jpg" alt=""></div>
+            <div class="col-12 col-sm-6 readMore">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis necessitatibus esse sit eligendi excepturi debitis delectus, natus iste ratione illo impedit nesciunt aliquid quia dignissimos iusto ducimus pariatur qui quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eius non, distinctio sunt alias odio illum repudiandae dolor a quibusdam, recusandae eligendi ad mollitia iure! Soluta sed repudiandae neque cum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque magni mollitia amet obcaecati enim eveniet, cumque eum quod necessitatibus praesentium repellat suscipit, eos reiciendis. Exercitationem, quos fugit! Hic, modi nihil.</div>
+        </div>
+    </div>
+</main>
+<style type="text/css">
+    #my-scrollbar {
+      width: 100vw;
+      height: 100vh;
+      overflow: auto;
+    }
+  </style>
+<script src="../dist/smooth-scrollbar.js"></script>
+<script>
+    var Scrollbar = window.Scrollbar;
+    Scrollbar.init(document.querySelector('#my-scrollbar'));
+</script>
+</body>
+</html>

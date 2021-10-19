@@ -1,0 +1,32 @@
+/* Whats the problem with tis file*/
+
+html {
+  scroll-behavior: smooth; font-family: 'Roboto', 'Raleway', sans-serif; font-size: 14px; color: #444;
+}
+
+img { width: 100%; margin: 20px auto; }
+
+.nav { position: fixed; top: 0; background: white; z-index: 100; }
+div[id^='item'] { margin-top: -40px;padding-top: 40px; }
+.row { min-height: 100vh; }
+.row>div { align-self: baseline; }
+.active { color: red; }
+
+
+
+.btn-custom { display: inline-block; vertical-align: middle; position: relative; }
+.btn-custom:hover { animation: color 0.5s; }
+.btn-custom:before, .btn-custom:after { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; transform: scale(0); }
+.btn-custom:before { background: #2098d1; }
+.btn-custom:after { background: #ffffff; }
+.btn-custom:hover:before, .btn-custom:hover:after { animation: mymove 0.5s ease-in-out normal forwards; }
+.btn-custom:hover:after { animation-delay: 0.25s; }
+
+
+.box {width: 40px;height: 30px;background: orange;border: none;margin: 10px;}
+.bx1 { background: skyblue; }
+.bx2 { background: gold; }
+.bx3 { background: lightgreen; }
+
+@keyframes mymove { from { transform: scale(0); border-radius: 50%; } to { transform: scale(1); border-radius: 0; } }
+@keyframes color { from {color: black;} to { color: white} }

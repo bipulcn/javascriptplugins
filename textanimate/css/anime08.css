@@ -1,0 +1,67 @@
+.present { min-height: 60vh; border-top: 3px solid rgba(100, 130, 50, 0.5); padding: 20px; }
+.code { border-top: 3px solid orange; padding: 20px; }
+.code pre { color: #00000088; }
+.box { width: 40px; height: 40px; background: skyblue; margin: 2px; border-radius: 2px; }
+/* sample 01 */
+.el01_1 { }
+/* sample 02 */
+.symbole { font-size: 2.5rem; }
+.symbole i { font-size: 0.25%; }
+/* sample 03 */
+.el03_1 .sym { width: fit-width; position: absolute; left: 100px; top: 100px; color: red; }
+.el03_2 .sym { width: fit-width; position: absolute; left: 400px; top: 200px; color: red; }
+/* sample 04 */
+.hexagon { clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0); width: 300px; height: 250px; background: url('../../imgs/img_1.jpg'); background-size: cover; }
+/* sample 05 */
+.line, .triangle { position: absolute; }
+.line polyline { stroke-dasharray: 100 600; stroke-dashoffset: 100; }
+.triangle div { border: 60px solid; width: 0; height: 0; border-right: 0; border-left: 60px solid #9daeEF99; border-top-color: transparent; border-bottom: 0; position: absolute; top: 0; left: 50px;
+ /*transform-origin: bottom right; */
+}
+/* sample 06 */
+.hides { overflow: hidden; }
+.ani-cirles1, .ani-cirles2, .ani-cirles3 { position: absolute; width: 100px; height: 100px; left: calc(25vw - 50px); top: 150px; transform: scale(0); border-radius: 50px; }
+.ani-cirles1 { background: #FF5A00; }
+.ani-cirles2 { background: #FF5A00; border: 20px solid white; }
+.ani-cirles3 { background: white; }
+.ani-bar1, .ani-bar2 { background: #FF5A00; width: 20px; height: 30px; position: absolute; top: 185px; }
+.ani-bar1 { left: calc(25vw - 150px); transform-origin: right center; }
+.ani-bar2 { left: calc(25vw + 150px); transform-origin: left center; }
+.ani-arrow1, .ani-arrow2 { position: absolute; left: calc(25vw - 10px); top: 200px; border: 10px solid white; width: 0; height: 0; border-left-color: transparent; border-right-color: transparent; opacity: 0; }
+.ani-arrow1 { border-bottom: transparent; }
+.ani-arrow2 { border-top: transparent; }
+/*.ani-cirles:after { content: ""; width: 80px; height: 80px; background: white; border-radius: 40px; position: absolute; left: 10px; top: 10px; }*/
+/* sample 07 */
+/* sample 08 */
+.svgbox {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect fill='url(%23gridpattern)' stroke-width='0' y='0' x='0' height='100%25' width='100%25'/%3E%3Crect stroke='%23000' id='svg_1' height='23' width='23' y='2.45313' x='2' stroke-width='5' fill='none'/%3E%3C/svg%3E"); width: 100px; height: 200px;}
+/* sample 09 */
+.fixbox > div { width: 100%; position: absolute; min-height: 40vh; overflow: hidden; padding: 0px; cursor: pointer; }
+.fixbox h1 { margin: 20px; width: 350px; font-size: 4rem; font-family: impact; letter-spacing: 2px; border-bottom: 2px solid white; }
+.fixbox p { margin: 20px; top: 100px; width: 380px; }
+.boxOne { background: orange; color: gold; z-index: 0; }
+.boxThree { background: gold; color: skyblue; z-index: 3; }
+.boxTwo { background: skyblue; color: white; z-index: 4; }
+/* sample 10 */
+.changebox { min-height: 400px; }
+.changebox >div { position: absolute; min-height: 400px; overflow: hidden; flex-grow: 1; width: 33%; transition: 1s all; }
+.changebox >div > * { padding: 10px; width: 100%; color: white; }
+.changebox >div > p { opacity: 0; transition: 1s all; }
+.cngOne { background: green; }
+.cngTwo { background: orange;  left: calc(33% + 15px) !important; }
+.cngThree { background: skyblue; left: calc(66% + 15px) !important; }
+.fullSize { left: 15px !important; width: 100% !important; z-index: 5; }
+.fullClear { z-index: 0; }
+.fullSize p { opacity: 1 !important; }
+.fullClear p { opacity: 0; }
+/* sample 11 */
+.buncBall1, .buncBall2, .buncBall3, .buncBall4, .buncBall5, .buncBall6, .buncBall7, .buncBall8, .buncBall9, .buncBall10 { width: 40px; height: 40px; border-radius: 20px; background: purple; display: inline-block; }
+.name { display: inline-block; min-width: 40px; }
+/* sample 12 */
+.expandit { width: 200px; height: 150px; background: tomato; margin: 20px auto; border-radius: 120px 130px 89px 140px; text-align: center; padding: 20px; }
+.zoomit, .slideit { width: 200px; height: 150px; background: tomato; margin: 20px auto; text-align: center; padding: 20px; }
+.expandit h4 { margin-top: 30px; }
+/* sample 14 */
+.dotpoint { width: 10px; height: 10px; border-radius: 5px; background: green; margin-left: 100px; }
+.dotball { width: 30px; height: 30px; border-radius: 15px; background: green; margin-left: 100px; }
+
+/* sample 13 */
